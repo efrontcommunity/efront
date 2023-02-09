@@ -1,0 +1,76 @@
+#s-salary {
+  padding: $gap-96 0px;
+
+  @include responsive-desktop {
+    padding: $gap-40 0px;
+  }
+
+  img {
+    width: 40px;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+    max-width: 45%;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 auto $gap-56 auto;
+
+    @include responsive-desktop {
+      max-width: 100%;
+      font-size: 2.4rem;
+    }
+
+    b {
+      background-image: $color-primary;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .cards-salary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+    gap: $gap-32;
+
+    article {
+      width: 30%;
+      height: auto;
+      background-color: $color-dark-200;
+      border: 2px solid $color-dark-400;
+      border-radius: 4px;
+      padding: $gap-24;
+      flex-grow: 1;
+
+      @include responsive-desktop {
+        width: 48%;
+      }
+
+      @include responsive-tablet {
+        min-height: auto;
+      }
+
+      img {
+        width: 40px;
+      }
+
+      h3 {
+        font-size: 1.8rem;
+        margin: $gap-24 0px $gap-16 0px;
+        font-weight: 500;
+        color: $color-gray;
+        @include responsive-mobile {
+          font-size: 2rem;
+        }
+      }
+
+      h4 {
+        font-size: 4.8rem;
+      }
+    }
+  }
+}

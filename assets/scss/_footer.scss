@@ -1,0 +1,47 @@
+footer {
+  width: 100%;
+  height: auto;
+  padding: $gap-16 0px;
+  background-color: $color-dark-200;
+
+  .grid-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  p {
+    font-size: 1.8rem;
+    a {
+      font-weight: 600;
+      background-image: $color-primary;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  img {
+    width: 32px;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: $gap-16;
+  }
+
+  @include responsive-desktop {
+    .grid-layout {
+      text-align: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: $gap-40;
+
+      div {
+        display: none;
+      }
+    }
+  }
+}

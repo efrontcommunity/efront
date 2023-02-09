@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Iuri Silva" />
+    <meta name="description" content="eFront - Estudando frontend do zero" />
+    <meta
+      name="keywords"
+      content="efront, ebook, hotmart, iuricode, frontend, html, css, javascript, sass, react, typescript, styled-components, tailwind, react hook form, bootstrap, react router"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#4776e6" />
+    <meta name="copyright" content="Iuri Silva" />
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta
+      property="og:image"
+      content="https://iuricode.com/efront/assets/image/preview.png"
+    />
+    <meta property="og:title" content="eFront" />
+    <meta
+      property="og:description"
+      content="eFront - Estudando frontend do zero"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Sora:wght@300;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/image/logo-page.svg"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="assets/icons/logo-page.svg" />
+    <link rel="apple-touch-icon" href="assets/icons/logo-page.svg" />
+    <link rel="canonical" href="https://iuricode.com/efront" />
+    <script src="assets/js/svg-inject.min.js"></script>
+    <title>eFront - Estudando frontend do zero</title>
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "1403194690415741");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1403194690415741&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+  </head>
+  <body>
+    <header id="info-promotion" class="delayExtraBigReveal">
+      <p>Aproveite os últimos dias de promoção</p>
+    </header>
+
+    <main>
+      <section id="s-menu" class="delayMediumReveal">
+        <div class="grid-layout">
+          <div>
+            <img
+              src="./assets/image/logo.svg"
+              alt="Logo do eFront"
+              onload="SVGInject(this)"
+            />
+          </div>
+
+          <div>
+            <nav>
+              <ul>
+                <li><a href="#s-home">Inicío</a></li>
+                <li><a href="#s-about">Quem sou</a></li>
+                <li><a href="#s-salary">Salários</a></li>
+                <li><a href="#s-technologies">Tecnologias</a></li>
+                <li><a href="#s-depositions">Depoimentos</a></li>
+              </ul>
+            </nav>
+            <a
+              href="https://pay.hotmart.com/L66686646K?checkoutMode=10"
+              rel="noopener"
+              target="_blank"
+            >
+              <button>Garantir ebook</button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="s-home">
+        <div class="grid-layout">
+          <div id="container-home">
+            <div id="info-main" class="delayLargeReveal">
+              <span class="delayExtraBigReveal">
+                <img
+                  src="./assets/icons/student.svg"
+                  alt="Logo de formado"
+                  onload="SVGInject(this)"
+                />
+                <p>Junta-se a +2.500 membros</p>
+              </span>
+              <h1>
+                Comece a estudar <b>frontend</b> do zero com uma linguagem
+                simples
+              </h1>
+              <p class="delayLargeReveal">
+                Trabalhe de casa, usando as tecnologias mais requisitados do
+                mercado frontend.
+              </p>
+            </div>
+
+            <article class="delayExtraBigReveal">
+              <div>
+                <h2>75% off</h2>
+                <p>Por tempo limitado</p>
+              </div>
+
+              <div>
+                <h3>de <span>R$ 100,00</span> por</h3>
+                <h4>R$ 25,00</h4>
+              </div>
+
+              <a
+                href="https://pay.hotmart.com/L66686646K?checkoutMode=10"
+                rel="noopener"
+                target="_blank"
+              >
+                <button>Garantir ebook</button>
+              </a>
+
+              <p id="info-pay">
+                Cartão de crédito, Boleto à vista, PayPal e Pix
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="s-advantage">
+        <div class="grid-layout">
+          <div class="cards delayMediumReveal">
+            <article>
+              <img
+                src="./assets/icons/clock.svg"
+                alt="ícone de relógio"
+                onload="SVGInject(this)"
+              />
+              <h3>7 dias de garantia</h3>
+              <p>
+                Se por algum motivo você não gostar dos materiais você pode
+                reembolsar sem taxa e perguntas.
+              </p>
+            </article>
+
+            <article>
+              <img
+                src="./assets/icons/lightning.svg"
+                alt="ícone de um raio"
+                onload="SVGInject(this)"
+              />
+              <h3>Acesso vitalício</h3>
+              <p>
+                Você tem acesso a todas as atualizações e para sempre (sem
+                pagar). Basta acessar a plataforma da Hotmart.
+              </p>
+            </article>
+
+            <article>
+              <img
+                src="./assets/icons/discord.svg"
+                alt="ícone de um livro"
+                onload="SVGInject(this)"
+              />
+              <h3>Comunidade</h3>
+              <p>
+                Você terá acesso a comunidade exclusiva do Discord, onde
+                utilizamos para resolver dúvidas.
+              </p>
+            </article>
+
+            <article>
+              <img
+                src="./assets/icons/target.svg"
+                alt="ícone de um alvo"
+                onload="SVGInject(this)"
+              />
+              <h3>Notion</h3>
+              <p>
+                Através do Notion você tem acesso aos materiais para realizar os
+                estudos sobre frontend e design.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="s-about">
+        <div class="grid-layout">
+          <div>
+            <div id="creator-photo" class="delayMediumReveal">
+              <h3 class="delayExtraBigReveal">Criador do eFront</h3>
+            </div>
+            <div>
+              <h4 class="delayMediumReveal">Fala Dev</h4>
+              <h2 class="delaySmallReveal">Iuri Silva</h2>
+              <h3 class="delayMediumReveal">
+                Frontend Developer & UI Designer
+              </h3>
+
+              <p class="delayLargeReveal">
+                Meu nome é Iuri e sou o criador do eFront, um material de ensino
+                de frontend pela internet. Passei por toda dificuldade de
+                encontrar materiais adaptados para entrar no mercado, e hoje, me
+                dedico a produção de conteúdo de frontend para ajudar o maior
+                número de pessoas possível a aprender.
+              </p>
+              <nav class="delayLargeReveal">
+                <ul>
+                  <a
+                    href="https://www.instagram.com/iuricode/"
+                    rel="noopener"
+                    target="_blank"
+                    ><li>
+                      <img
+                        src="./assets/icons/instagram.svg"
+                        alt="Ícone do Instagram"
+                        onload="SVGInject(this)"
+                      /></li
+                  ></a>
+
+                  <a
+                    href="https://www.linkedin.com/in/iuricode/"
+                    rel="noopener"
+                    target="_blank"
+                    ><li>
+                      <img
+                        src="./assets/icons/linkedin.svg"
+                        rel="noopener"
+                        alt="Ícone do LinkedIn"
+                        onload="SVGInject(this)"
+                      /></li
+                  ></a>
+
+                  <a
+                    href="https://iuricode-blog.vercel.app/"
+                    rel="noopener"
+                    target="_blank"
+                    ><li>
+                      <img
+                        src="./assets/icons/laptop.svg"
+                        alt="Ícone de um laptop"
+                        onload="SVGInject(this)"
+                      /></li
+                  ></a>
+
+                  <a
+                    href="https://discord.com/invite/QevDJqCzaY"
+                    rel="noopener"
+                    target="_blank"
+                    ><li>
+                      <img
+                        src="./assets/icons/discord.svg"
+                        alt="Ícone do Discord"
+                        onload="SVGInject(this)"
+                      /></li
+                  ></a>
+
+                  <a
+                    href="https://github.com/iuricode"
+                    rel="noopener"
+                    target="_blank"
+                    ><li>
+                      <img
+                        src="./assets/icons/github.svg"
+                        alt="Ícone do GitHub"
+                        onload="SVGInject(this)"
+                      /></li
+                  ></a>
+
+                  <a
+                    href="https://www.behance.net/iuricode"
+                    rel="noopener"
+                    target="_blank"
+                    ><li>
+                      <img
+                        src="./assets/icons/behance.svg"
+                        alt="Ícone do Behance"
+                        onload="SVGInject(this)"
+                      /></li
+                  ></a>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="s-salary">
+        <div class="grid-layout">
+          <h2>Quanto <b>ganha</b> um desenvolvedor no Brasil</h2>
+          <div class="cards-salary delayMediumReveal">
+            <article>
+              <img
+                src="./assets/icons/star.svg"
+                alt="ícone de estrela"
+                onload="SVGInject(this)"
+              />
+              <h3>Desenvolvedor Júnior</h3>
+              <h4>3-5K</h4>
+            </article>
+
+            <article>
+              <img
+                src="./assets/icons/star.svg"
+                alt="ícone de estrela"
+                onload="SVGInject(this)"
+              />
+              <img
+                src="./assets/icons/star.svg"
+                alt="ícone de estrela"
+                onload="SVGInject(this)"
+              />
+              <h3>Desenvolvedor Pleno</h3>
+              <h4>6-8K</h4>
+            </article>
+
+            <article>
+              <img
+                src="./assets/icons/star.svg"
+                alt="ícone de estrela"
+                onload="SVGInject(this)"
+              />
+              <img
+                src="./assets/icons/star.svg"
+                alt="ícone de estrela"
+                onload="SVGInject(this)"
+              />
+              <img
+                src="./assets/icons/star.svg"
+                alt="ícone de estrela"
+                onload="SVGInject(this)"
+              />
+              <h3>Desenvolvedor Sênior</h3>
+              <h4>8-20K</h4>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="s-technologies">
+        <div class="grid-layout">
+          <h2>
+            As tecnologias para você iniciar e <b>entrar no mercado</b> frontend
+          </h2>
+          <div class="cards delayMediumReveal">
+            <article>
+              <img
+                src="./assets/icons/html.svg"
+                alt="ícone do html"
+                onload="SVGInject(this)"
+              />
+              <h3>HTML</h3>
+              <p>
+                É uma linguagem de marcação, onde marcamos os elementos para
+                definir quais informações a página vai exibir.
+              </p>
+            </article>
+
+            <article>
+              <img
+                src="./assets/icons/css.svg"
+                alt="ícone do css"
+                onload="SVGInject(this)"
+              />
+              <h3>CSS</h3>
+              <p>
+                É uma linguagem de folha de estilo composta por “camadas”,
+                criado com o propósito de estilizar as páginas HTML.
+              </p>
+            </article>
+
+            <article>
+              <img
+                src="./assets/icons/javascript.svg"
+                alt="ícone do javascript"
+                onload="SVGInject(this)"
+              />
+              <h3>JavaScript</h3>
+              <p>
+                É uma linguagem de programação que permite a você implementar
+                elementos dinâmicos em páginas web.
+              </p>
+            </article>
+
+            <article>
+              <img
+                src="./assets/icons/sass.svg"
+                alt="ícone do sass"
+                onload="SVGInject(this)"
+              />
+              <h3>Sass</h3>
+              <p>
+                É um pré-processador CSS que adiciona alguns recursos que não
+                estão disponíveis de forma nativa.
+              </p>
+            </article>
+
+            <article>
+              <img
+                src="./assets/icons/bootstrap.svg"
+                alt="ícone do bootstrap"
+                onload="SVGInject(this)"
+              />
+              <h3>Bootstrap</h3>
+              <p>
+                É um framework CSS que fornece componentes (como menu, rodapé,
+                card, modal) já prontos para serem utilizados.
+              </p>
+            </article>
+
+            <article>
+              <img
+                src="./assets/icons/react.svg"
+                alt="ícone do react"
+                onload="SVGInject(this)"
+              />
+              <h3>React</h3>
+              <p>
+                É uma biblioteca JavaScript com foco em criar interfaces de
+                usuário de forma "componetizada".
+              </p>
+            </article>
+
+            <article>
+              <img
+                src="./assets/icons/reactrouter.svg"
+                alt="ícone do react router"
+                onload="SVGInject(this)"
+              />
+              <h3>React Router</h3>
+              <p>
+                É uma biblioteca padrão para que você consiga fazer o roteamento
+                das páginas da sua aplicação em React de forma dinâmica
+              </p>
+            </article>
+
+            <article>
+              <img
+                src="./assets/icons/typescript.svg"
+                alt="ícone do typescript"
+                onload="SVGInject(this)"
+              />
+              <h3>TypeScript</h3>
+              <p>
+                É um superset do JavaScript que incluir recursos que não estão
+                presentes na linguagem de forma nativa, além de torná-la
+                estática.
+              </p>
+            </article>
+
+            <article>
+              <img
+                src="./assets/icons/styled-components.svg"
+                alt="ícone do styled-components"
+                onload="SVGInject(this)"
+              />
+              <h3>styled-components</h3>
+              <p>
+                É uma biblioteca que utiliza o conceito de CSS-in-JS, ou seja,
+                que nos permite escrever CSS dentro do JS.
+              </p>
+            </article>
+
+            <article>
+              <img
+                src="./assets/icons/tailwindcss.svg"
+                alt="ícone do tailwind css"
+                onload="SVGInject(this)"
+              />
+              <h3>Tailwind CSS</h3>
+              <p>
+                É um framework CSS que nos fornece classes utilitárias com o
+                propósito de estilizar as páginas.
+              </p>
+            </article>
+
+            <article>
+              <img
+                src="./assets/icons/form.svg"
+                alt="ícone do react hook form"
+                onload="SVGInject(this)"
+              />
+              <h3>React Hook Form</h3>
+              <p>
+                É uma biblioteca que ajuda você a validar formulários no React
+                em poucas linhas de códigos.
+              </p>
+            </article>
+
+            <article>
+              <img
+                src="./assets/icons/design.svg"
+                alt="ícone do design"
+                onload="SVGInject(this)"
+              />
+              <h3>Design</h3>
+              <p>
+                Iremos aprender alguns conceitos importantes para melhorar a
+                interface de um desenvolvedor frontend.
+              </p>
+            </article>
+
+            <article class="technologies-disable">
+              <img
+                src="./assets/icons/storybook.svg"
+                alt="ícone do storybook"
+                onload="SVGInject(this)"
+              />
+              <h3>Storybook</h3>
+              <p>Em breve no eFront.</p>
+            </article>
+
+            <article class="technologies-disable">
+              <img
+                src="./assets/icons/radix.svg"
+                alt="ícone do radix"
+                onload="SVGInject(this)"
+              />
+              <h3>Radix</h3>
+              <p>Em breve no eFront.</p>
+            </article>
+
+            <article class="technologies-disable">
+              <img
+                src="./assets/icons/next.svg"
+                alt="ícone do next"
+                onload="SVGInject(this)"
+                id="next-icon"
+              />
+              <h3>Next.js</h3>
+              <p>Em breve no eFront.</p>
+            </article>
+
+            <article class="technologies-disable">
+              <img
+                src="./assets/icons/cypress.svg"
+                alt="ícone do cypress"
+                onload="SVGInject(this)"
+              />
+              <h3>Cypress</h3>
+              <p>Em breve no eFront.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="s-depositions">
+        <div class="grid-layout">
+          <h2>O que os <b>membros</b> estão dizendo na Hotmart</h2>
+
+          <div id="container-depositions">
+            <article>
+              <div>
+                <span>
+                  <h3>Guilherme Reis</h3>
+                  <div>
+                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
+                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
+                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
+                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
+                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
+                  </div>
+                </span>
+              </div>
+              <p>
+                “Um excelente material de estudo com uma didática que favorece
+                muito o aprendizado. recomendo.”
+              </p>
+            </article>
+
+            <article>
+              <div>
+                <span>
+                  <h3>Carlos Yuri</h3>
+                  <div>
+                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
+                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
+                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
+                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
+                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
+                  </div>
+                </span>
+              </div>
+              <p>
+                “Ótima didática, fácil de compreender. Ótimo para quem busca um
+                direcionamento na tecnologia e está começando.”
+              </p>
+            </article>
+
+            <article>
+              <div>
+                <span>
+                  <h3>Fernanda Gomes</h3>
+                  <div>
+                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
+                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
+                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
+                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
+                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
+                  </div>
+                </span>
+              </div>
+              <p>
+                “Ebook incrível, para quem está iniciando ou quer relembrar
+                conceitos, super didático e atual às necessidades do mercado.
+                Simplesmente sensacional, parabéns Iuri, você arrasa demais.”
+              </p>
+            </article>
+
+            <article>
+              <div>
+                <span>
+                  <h3>Rosana Cristina</h3>
+                  <div>
+                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
+                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
+                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
+                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
+                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
+                  </div>
+                </span>
+              </div>
+              <p>
+                “Este conteúdo é muito bem estruturado e oferece muito mais do
+                que simples apostilas ou orientações. Ele oferece a experiência
+                de um desenvolvedor e sua capacidade de compartilhar sua
+                experiência.”
+              </p>
+            </article>
+
+            <article>
+              <div>
+                <span>
+                  <h3>Josiane de Cássia</h3>
+                  <div>
+                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
+                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
+                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
+                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
+                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
+                  </div>
+                </span>
+              </div>
+              <p>
+                “Material riquíssimo, dá para notar que foi feito por alguém que
+                tem um domínio enorme em front-end, pela linguagem simples e
+                exemplos didáticos. Queria ter conhecido esse material há uns
+                anos atrás, isso me ajudaria a evitar o caminho das pedras que a
+                gente encontra quando está iniciando na programação web.”
+              </p>
+            </article>
+
+            <article>
+              <div>
+                <span>
+                  <h3>Amanda Carvalho</h3>
+                  <div>
+                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
+                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
+                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
+                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
+                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
+                  </div>
+                </span>
+              </div>
+              <p>
+                “Gostei muito do conteúdo e da didática! Obrigada por partilhar
+                o conhecimento e parabéns pelo trabalho! É de grande ajuda não
+                só para aqueles que estão iniciando mas também apra aqueles que
+                querem se aprofundar nesses assuntos!”
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="s-start">
+        <div class="grid-layout">
+          <article>
+            <div id="cta-start" class="delayMediumReveal">
+              <h2>Aprenda desenvolvimento <b>frontend</b> de forma simples</h2>
+
+              <p>de <span>R$ 100,00</span> por apenas</p>
+              <h3>R$ 25,00</h3>
+
+              <a
+                href="https://pay.hotmart.com/L66686646K?checkoutMode=10"
+                rel="noopener"
+                target="_blank"
+              >
+                <button>Garantir ebook</button>
+              </a>
+
+              <p>Cartão de crédito, Boleto à vista, PayPal e Pix</p>
+            </div>
+
+            <div>
+              <h4 class="delayLargeReveal">
+                Além do ebook você irá receber materiais como:
+              </h4>
+              <ul class="delayExtraBigReveal">
+                <li>
+                  <img
+                    src="./assets/icons/check.svg"
+                    alt="Ícone de confirmação"
+                    onload="SVGInject(this)"
+                  />
+                  <p>Roadmap de estudos</p>
+                </li>
+                <li>
+                  <img
+                    src="./assets/icons/check.svg"
+                    alt="Ícone de confirmação"
+                    onload="SVGInject(this)"
+                  />
+                  <p>Materiais de apoio</p>
+                </li>
+                <li>
+                  <img
+                    src="./assets/icons/check.svg"
+                    alt="Ícone de confirmação"
+                    onload="SVGInject(this)"
+                  />
+                  <p>Exercício prático</p>
+                </li>
+                <li>
+                  <img
+                    src="./assets/icons/check.svg"
+                    alt="Ícone de confirmação"
+                    onload="SVGInject(this)"
+                  />
+                  <p>Recomendações</p>
+                </li>
+                <li>
+                  <img
+                    src="./assets/icons/check.svg"
+                    alt="Ícone de confirmação"
+                    onload="SVGInject(this)"
+                  />
+                  <p>Projetos no Figma</p>
+                </li>
+                <li>
+                  <img
+                    src="./assets/icons/check.svg"
+                    alt="Ícone de confirmação"
+                    onload="SVGInject(this)"
+                  />
+                  <p>Slides</p>
+                </li>
+                <li>
+                  <img
+                    src="./assets/icons/check.svg"
+                    alt="Ícone de confirmação"
+                    onload="SVGInject(this)"
+                  />
+                  <p>Questionários</p>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="s-faq">
+        <div class="grid-layout">
+          <h2 class="delayExtraBigReveal">
+            Algumas <b>perguntas frequentes</b> sobre o ebook
+          </h2>
+          <div>
+            <article>
+              <div class="accordion">
+                <h3>É um curso com vídeos aulas?</h3>
+                <div class="icon">+</div>
+              </div>
+              <div class="panel">
+                <p>
+                  Não! O eFront é um <b>ebook</b> criado por mim onde eu ensino
+                  a como utilizar tecnologias frontend. Tudo isso é ensinado com
+                  linguagem simples de entender, até quem está iniciando
+                  consegue entender o que cada linguagem faz.
+                </p>
+              </div>
+            </article>
+
+            <article>
+              <div class="accordion">
+                <h3>Se comprar agora tem acesso a atualizações?</h3>
+                <div class="icon">+</div>
+              </div>
+              <div class="panel">
+                <p>
+                  O acesso é vitalício, então você terá acesso para sempre e com
+                  direito a receber as atualizações sem precisar pagar nada.
+                </p>
+              </div>
+            </article>
+
+            <article>
+              <div class="accordion">
+                <h3>Por onde eu acesso o ebook após a compra?</h3>
+                <div class="icon">+</div>
+              </div>
+              <div class="panel">
+                <p>
+                  Você irá receber o acesso do ebook por email. Mas para acessar
+                  as atualizações é preciso acessar a plataforma da Hotmart com
+                  o email que realizou a compra.
+                </p>
+              </div>
+            </article>
+
+            <article>
+              <div class="accordion">
+                <h3>Consigo me afiliado do ebook?</h3>
+                <div class="icon">+</div>
+              </div>
+              <div class="panel">
+                <p>
+                  Qualquer pessoa consegue se afiliado ao eFront, para isso
+                  basta acessar o este
+                  <a
+                    href="https://app-vlc.hotmart.com/affiliate-recruiting/view/7479e66686667"
+                    target="_blank"
+                    >link</a
+                  >
+                  . Os afiliados ganham 50% das vendas realizadas.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="grid-layout">
+        <p>
+          Copyright © 2023
+          <a href="https://iuricode.com" rel="noopener" target="_blank">
+            iuricode.com.
+          </a>
+          Todos os direitos reservados.
+        </p>
+
+        <div>
+          <p>Powered by</p>
+          <img
+            src="./assets/icons/logo-iuricode.svg"
+            alt="Logo iuricode"
+            onload="SVGInject(this)"
+          />
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
+  </body>
+</html>

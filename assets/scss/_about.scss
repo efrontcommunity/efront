@@ -1,0 +1,129 @@
+#s-about {
+  padding: $gap-96 0px;
+
+  @include responsive-desktop {
+    padding: $gap-40 0px;
+  }
+
+  .grid-layout {
+    > div {
+      background-color: $color-dark-200;
+      border: 2px solid $color-dark-400;
+      padding: $gap-24;
+      border-radius: 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: auto;
+
+      @include responsive-desktop {
+        flex-wrap: wrap;
+        gap: $gap-40;
+      }
+
+      #creator-photo {
+        width: 47%;
+        background-image: url("../image/foto-iuricode.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 4px;
+        height: 500px;
+
+        @include responsive-desktop {
+          width: 100%;
+          height: 400px;
+        }
+
+        @include responsive-tablet {
+          height: 350px;
+        }
+
+        @include responsive-mobile {
+          height: 300px;
+        }
+
+        h3 {
+          color: $color-dark;
+          background-color: $color-white;
+          padding: $gap-8;
+          border-radius: 16px;
+          width: 180px;
+          text-align: center;
+          font-size: 1.4rem;
+          font-weight: 500;
+          margin: $gap-24;
+        }
+      }
+
+      div:nth-child(2) {
+        width: 49%;
+
+        @include responsive-desktop {
+          width: 100%;
+        }
+
+        h2 {
+          font-size: 4rem;
+          font-weight: 500;
+          margin-top: $gap-16;
+
+          @include responsive-tablet {
+            font-size: 3.2rem;
+          }
+        }
+
+        h3 {
+          font-size: 1.8rem;
+          font-weight: 300;
+          margin-bottom: $gap-8;
+        }
+
+        h4 {
+          font-size: 2rem;
+          font-weight: 600;
+          background-image: $color-primary;
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        p {
+          font-size: 1.8rem;
+          color: $color-gray;
+          line-height: 160%;
+          margin: $gap-40 0px $gap-48 0px;
+        }
+
+        nav {
+          ul {
+            display: flex;
+            align-items: center;
+            gap: $gap-40;
+
+            @include responsive-desktop {
+              flex-wrap: wrap;
+            }
+
+            a {
+              background-color: $color-dark;
+              border: 2px solid $color-dark-400;
+              border-radius: 6px;
+              padding: $gap-8;
+
+              @include responsive-desktop {
+                img {
+                  width: 40px;
+                }
+              }
+
+              &:hover {
+                border: 2px solid #8e54e9;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

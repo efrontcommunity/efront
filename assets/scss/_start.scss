@@ -1,0 +1,112 @@
+#s-start {
+  padding: $gap-96 0px;
+
+  @include responsive-desktop {
+    padding: $gap-40 0px;
+  }
+
+  article {
+    padding: $gap-80;
+    background-color: $color-dark-200;
+    border: 2px solid $color-dark-400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: $gap-80;
+    border-radius: 4px;
+
+    @include responsive-desktop {
+      flex-wrap: wrap;
+      padding: $gap-24;
+    }
+
+    #cta-start {
+      text-align: center;
+
+      p {
+        margin: $gap-16 0px;
+        font-weight: 500;
+
+        span {
+          text-decoration: line-through;
+        }
+      }
+
+      a {
+        background: $color-primary;
+        padding: $gap-24 $gap-40;
+        border-radius: 4px;
+        text-align: center;
+
+        &:hover {
+          background: $color-primary-hover;
+        }
+
+        button {
+          margin: $gap-80 0px $gap-32 0px;
+          text-transform: uppercase;
+          font-weight: 500;
+          font-size: 1.8rem;
+          color: $color-dark;
+          background-color: transparent;
+          cursor: pointer;
+        }
+      }
+    }
+
+    div {
+      h2 {
+        font-size: 3.2rem;
+        font-weight: 500;
+        width: 500px;
+        margin-bottom: $gap-32;
+
+        @include responsive-desktop {
+          width: 100%;
+          font-size: 2.4rem;
+        }
+
+        b {
+          background-image: $color-primary;
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+
+      p {
+        font-size: 1.8rem;
+        color: $color-gray;
+      }
+
+      h3 {
+        font-size: 4.8rem;
+        font-weight: 500;
+        @include responsive-desktop {
+          font-size: 4rem;
+        }
+      }
+
+      h4 {
+        font-size: 2.4rem;
+        font-weight: 500;
+        width: 350px;
+        @include responsive-desktop {
+          width: 100%;
+          text-align: center;
+        }
+      }
+
+      ul {
+        margin-top: $gap-48;
+
+        li {
+          display: flex;
+          align-items: center;
+          gap: $gap-16;
+          margin: $gap-8 0px;
+        }
+      }
+    }
+  }
+}

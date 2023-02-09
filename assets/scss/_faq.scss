@@ -1,0 +1,90 @@
+#s-faq {
+  padding: $gap-96 0px;
+
+  @include responsive-desktop {
+    padding: $gap-40 0px;
+  }
+
+  .grid-layout {
+    > div {
+      margin-top: $gap-96;
+    }
+
+    > h2 {
+      font-size: 3.2rem;
+      font-weight: 500;
+      text-align: center;
+      max-width: 40%;
+      margin: 0 auto $gap-48 auto;
+
+      @include responsive-desktop {
+        max-width: 100%;
+        font-size: 2.4rem;
+      }
+
+      b {
+        background-image: $color-primary;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+    .accordion {
+      display: flex;
+      justify-content: space-between;
+      gap: $gap-24;
+      border-bottom: 1px solid $color-dark-400;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      padding-bottom: $gap-32;
+
+      &:hover {
+        background: $color-primary;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      h3 {
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 150%;
+      }
+
+      .icon {
+        font-size: 3.2rem;
+        font-weight: 300;
+      }
+    }
+
+    .panel {
+      max-height: 0px;
+      overflow: hidden;
+      transition: all 1s ease;
+      border-bottom: 1px solid $color-dark-400;
+      margin-bottom: $gap-24;
+
+      p {
+        margin: $gap-40 0px;
+        font-size: 2rem;
+        color: $color-gray;
+        line-height: 160%;
+      }
+
+      a {
+        background-image: $color-primary;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+    .open {
+      background: $color-primary;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
