@@ -6,16 +6,6 @@
 
 <h4 align="center"><a href="https://www.iuricode.com/efront">Clique para visitar o projeto</a></h4>
 
-## 📚 Seções
-
-O site é composto por cinco seções:
-
-- **Inicío:**
-- **Quem sou:**
-- **Tecnologias:**
-- **Depoimentos:**
-- **Comece agora:**
-
 ---
 
 ## 💼 Tecnologias utilizadas
