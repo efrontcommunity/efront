@@ -1,0 +1,109 @@
+#s-sample {
+  padding: $gap-96 0px;
+
+  .grid-layout {
+    display: flex;
+
+    div:nth-child(1) {
+      width: 60%;
+
+      @include responsive-desktop {
+        width: 100%;
+      }
+
+      div {
+        margin-top: 72px;
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+      }
+
+      a,
+      button {
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: $color-white;
+        cursor: pointer;
+
+        @include responsive-mobile {
+          width: 100%;
+          text-align: center;
+        }
+      }
+
+      a {
+        padding: $gap-16 $gap-32;
+        border-radius: 4px;
+      }
+
+      a:nth-child(1) {
+        background: #8e54e9;
+
+        &:hover {
+          background-color: #6730bd;
+        }
+
+        button {
+          background-color: transparent;
+        }
+      }
+
+      a:nth-child(2) {
+        color: #8e54e9;
+
+        background-color: rgba(142, 84, 233, 0.1);
+
+        &:hover {
+          background-color: rgba(142, 84, 233, 0.2);
+        }
+      }
+    }
+
+    div:nth-child(2) {
+      width: 40%;
+
+      @include responsive-desktop {
+        display: none;
+      }
+    }
+  }
+
+  @include responsive-desktop {
+    padding: $gap-40 0px;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+    max-width: 70%;
+    font-weight: 500;
+
+    @include responsive-desktop {
+      max-width: 100%;
+      font-size: 2.4rem;
+    }
+
+    b {
+      background-image: $color-primary;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  ul {
+    margin-top: $gap-48;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: $gap-24;
+      margin: $gap-16 0px;
+
+      p {
+        font-size: 1.8rem;
+        line-height: 180%;
+      }
+    }
+  }
+}

@@ -34,20 +34,21 @@
 
       a {
         background: $color-primary;
-        padding: $gap-24 $gap-40;
+        padding: $gap-16;
         border-radius: 4px;
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin: $gap-48 0px $gap-32 0px;
 
         &:hover {
           background: $color-primary-hover;
         }
 
         button {
-          margin: $gap-80 0px $gap-32 0px;
           text-transform: uppercase;
           font-weight: 500;
           font-size: 1.8rem;
-          color: $color-dark;
+          color: $color-white;
           background-color: transparent;
           cursor: pointer;
         }

@@ -90,6 +90,7 @@
         div:nth-child(1) {
           display: flex;
           align-items: center;
+          flex-wrap: wrap;
           gap: $gap-24;
 
           h2 {
@@ -98,7 +99,7 @@
             font-size: 1.8rem;
             font-weight: 500;
             border-radius: 4px;
-            padding: $gap-8 $gap-32;
+            padding: $gap-8 $gap-24;
             text-transform: uppercase;
           }
 
