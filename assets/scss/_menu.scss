@@ -41,7 +41,7 @@
             a {
               font-size: 1.8rem;
               color: $color-gray;
-              font-weight: 500;
+              font-weight: 400;
 
               &:hover {
                 color: $color-white;
@@ -57,7 +57,6 @@
         text-align: center;
         background: $color-dark;
         position: relative;
-    
 
         &::before {
           content: "";
@@ -82,7 +81,6 @@
         }
 
         &:hover {
-       
           background: $color-primary;
         }
       }

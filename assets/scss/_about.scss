@@ -75,14 +75,14 @@
 
         h3 {
           font-size: 1.8rem;
-          font-weight: 300;
+          font-weight: 400;
           margin-bottom: $gap-8;
         }
 
         h4 {
           font-size: 2rem;
           font-weight: 400;
-          color: #8e54e9;
+          color: $color-primary;
         }
 
         p {
@@ -115,7 +115,7 @@
               }
 
               &:hover {
-                border: 2px solid #8e54e9;
+                border: 2px solid $color-primary;
               }
             }
           }

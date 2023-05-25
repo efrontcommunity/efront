@@ -44,7 +44,7 @@
         }
 
         h1 {
-          font-size: 4.8rem;
+          font-size: 5.6rem;
           font-weight: 500;
           width: 600px;
 
@@ -54,10 +54,8 @@
           }
 
           b {
-            background-image: $color-primary;
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: $color-primary;
+            font-weight: 500;
           }
         }
 

@@ -33,31 +33,27 @@
       }
 
       a {
-        background: $color-primary;
-        padding: $gap-16;
-        border-radius: 4px;
-        display: flex;
-        justify-content: center;
-        margin: $gap-48 0px $gap-32 0px;
-
-        &:hover {
-          background: $color-primary-hover;
-        }
-
         button {
+          margin: $gap-32 0;
           text-transform: uppercase;
+          background: $color-primary;
+          padding: $gap-16 $gap-48;
+          border-radius: 4px;
           font-weight: 500;
           font-size: 1.8rem;
           color: $color-white;
-          background-color: transparent;
           cursor: pointer;
+
+          &:hover {
+            background: $color-primary-hover;
+          }
         }
       }
     }
 
     div {
       h2 {
-        font-size: 3.2rem;
+        font-size: 4rem;
         font-weight: 500;
         width: 500px;
         margin-bottom: $gap-32;
@@ -68,10 +64,8 @@
         }
 
         b {
-          background-image: $color-primary;
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
+          color: $color-primary;
+          font-weight: 500;
         }
       }
 
@@ -89,7 +83,7 @@
       }
 
       h4 {
-        font-size: 2.4rem;
+        font-size: 3.2rem;
         font-weight: 500;
         width: 350px;
         @include responsive-desktop {
