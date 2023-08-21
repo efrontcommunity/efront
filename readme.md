@@ -1,10 +1,10 @@
 <h1 align="center">
-  🛒<br>eFront - Iuri Silva
+  💻<br>eFront - Iuri Silva
 </h1>
 
 ![Resultado final do projeto](assets/image/preview.png)
 
-<h4 align="center"><a href="https://www.iuricode.com/efront">Clique para visitar o projeto</a></h4>
+<h4 align="center"><a href="https://steam-seven.vercel.app/">Clique para visitar o projeto</a></h4>
 
 ---
 
