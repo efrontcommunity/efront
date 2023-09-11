@@ -1,6 +1,6 @@
 .cards {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
 
   flex-wrap: wrap;
@@ -8,7 +8,7 @@
 
   article {
     width: 20%;
-    min-height: 290px;
+    
     background-color: $color-dark-200;
     border: 1px solid $color-dark-400;
     padding: $gap-24;

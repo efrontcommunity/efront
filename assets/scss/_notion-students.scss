@@ -1,4 +1,4 @@
-#s-students {
+#s-notion-students {
   padding: $gap-96 0px;
 
   @include responsive-desktop {
@@ -16,6 +16,10 @@
 
     div:nth-child(1) {
       width: 50%;
+  
+      img {
+        width: 100%;
+      }
 
       @include responsive-tablet {
         width: 100%;
@@ -25,7 +29,7 @@
     div:nth-child(2) {
       width: 50%;
 
-      @include responsive-desktop {
+      @include responsive-tablet {
         width: 100%;
       }
     }
@@ -52,31 +56,29 @@
     font-size: 2.4rem;
     color: $color-gray;
     line-height: 160%;
-    margin: $gap-40 0;
+    margin: $gap-40 0 $gap-56 0;
 
     @include responsive-desktop {
-      font-size: 1.8rem;
+      font-size: 2rem;
       width: 100%;
     }
   }
 
   a {
-    button {
-      padding: $gap-16 $gap-40;
-      text-transform: uppercase;
-      font-weight: 500;
-      font-size: 1.8rem;
-      color: $color-dark;
-      background-color: $color-primary;
-      cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: $color-dark;
+    padding: $gap-16 $gap-40;
+    background-color: $color-primary;
+    cursor: pointer;
 
-      &:hover {
-        background: $color-primary-hover;
-      }
+    &:hover {
+      background: $color-primary-hover;
+    }
 
-      @include responsive-tablet {
-        width: 100%;
-      }
+    @include responsive-tablet {
+      width: 100%;
     }
   }
 }

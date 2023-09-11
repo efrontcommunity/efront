@@ -68,6 +68,10 @@
     div:nth-child(2) {
       width: 40%;
 
+      svg {
+        width: 100%;
+      }
+
       @include responsive-desktop {
         display: none;
       }
@@ -110,8 +114,10 @@
       gap: $gap-24;
       margin: $gap-16 0px;
 
-      img {
-        width: 24px;
+      svg {
+        width: 32px;
+        min-width: 32px;
+        max-width: 32px;
       }
 
       p {

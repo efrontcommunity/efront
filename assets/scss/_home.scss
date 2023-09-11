@@ -37,6 +37,7 @@
           }
 
           svg {
+            width: 40px;
             margin-left: -8px;
           }
 
@@ -47,7 +48,7 @@
           p {
             font-size: 1.8rem;
             font-weight: 400;
-            margin-left: $gap-16;
+            margin-left: $gap-24;
             font-family: $font-title;
           }
         }

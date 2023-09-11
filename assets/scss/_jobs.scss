@@ -1,9 +1,5 @@
 #s-jobs {
-  padding: $gap-96 0px;
-
-  @include responsive-desktop {
-    padding: $gap-40 0px;
-  }
+  padding: $gap-40 0px;
 
   @keyframes rotation-jobs {
     0% {

@@ -2,22 +2,39 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="author" content="Iuri Silva" />
-    <meta name="description" content="eFront - Estudando frontend do zero" />
     <meta
       name="keywords"
-      content="efront, ebook, hotmart, iuricode, frontend, html, css, javascript, sass, bootstrap, react, react router, typescript, styled-components, tailwind, react hook form, radix, storybook "
+      content="efront, ebook, frontend, hotmart, iuricode"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#899bff" />
+    <meta name="author" content="Iuri Silva" />
     <meta name="copyright" content="Iuri Silva" />
     <meta http-equiv="content-language" content="pt-br" />
-    <meta property="og:image" content="assets/image/preview.png" />
-    <meta property="og:title" content="eFront" />
+
+    <title>eFront | Estudando frontend do zero</title>
+    <meta name="title" content="eFront | Estudando frontend do zero" />
+    <meta
+      name="description"
+      content="Tudo que você precisa pra evoluir em frontend em um só material."
+    />
+
+    <meta property="og:title" content="eFront | Estudando frontend do zero" />
     <meta
       property="og:description"
-      content="eFront - Estudando frontend do zero"
+      content="Tudo que você precisa pra evoluir em frontend em um só material."
     />
+    <meta property="og:image" content="assets/image/capa-page.png" />
+
+    <link
+      rel="shortcut icon"
+      href="assets/image/logo-page.png"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="assets/image/logo-page.png" />
+    <link rel="apple-touch-icon" href="assets/image/logo-page.png" />
+
+    <link rel="canonical" href="https://iuricode.com/efront" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,32 +42,24 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link
-      rel="shortcut icon"
-      href="assets/image/logo-page.svg"
-      type="image/x-icon"
-    />
-    <link rel="icon" href="assets/icons/logo-page.svg" />
-    <link rel="apple-touch-icon" href="assets/icons/logo-page.svg" />
-    <link rel="canonical" href="https://iuricode.com/efront" />
     <script src="assets/js/svg-inject.min.js"></script>
-    <title>eFront - Estudando frontend do zero</title>
   </head>
   <body>
-    <header id="info-promotion" class="delayExtraBigReveal">
+    <header id="info-promotion">
       <p>
         Você aprende e doa! 5% de cada venda será doado para ONGs de animais
       </p>
     </header>
 
     <main>
-      <section id="s-menu" class="delayMediumReveal">
+      <section id="s-menu">
         <div class="grid-layout">
           <div>
             <img
-              src="./assets/icons/logo-large.svg"
+              src="./assets/image/logo-large.png"
               alt="Logo do eFront"
-              onload="SVGInject(this)"
+              width="100"
+              height="24"
             />
           </div>
 
@@ -67,16 +76,37 @@
       <section id="s-home">
         <div class="grid-layout">
           <div id="container-home">
-            <div id="info-main" class="delayLargeReveal">
-              <span class="delayExtraBigReveal">
-                <img src="./assets/image/rosana.svg" alt="Foto aluno" />
-                <img src="./assets/image/marcos.svg" alt="Foto aluno" />
-                <img src="./assets/image/fernanda.svg" alt="Foto aluno" />
-                <img src="./assets/image/amanda.svg" alt="Foto aluno" />
+            <div id="info-main">
+              <span>
+                <img
+                  src="./assets/image/rosana.png"
+                  alt="Foto da Rosana"
+                  width="48"
+                  height="48"
+                />
+                <img
+                  src="./assets/image/marcos.png"
+                  alt="Foto do Marcos"
+                  width="48"
+                  height="48"
+                />
+                <img
+                  src="./assets/image/fernanda.png"
+                  alt="Foto da Fernanda"
+                  width="48"
+                  height="48"
+                />
+                <img
+                  src="./assets/image/amanda.png"
+                  alt="Foto da Amanda"
+                  width="48"
+                  height="48"
+                />
                 <img
                   src="./assets/icons/seal-check.svg"
                   alt="Ícone"
                   onload="SVGInject(this)"
+                  id="seal-check"
                 />
                 <p>Junta-se a +6.000 alunos</p>
               </span>
@@ -84,13 +114,13 @@
                 Comece a estudar <b>frontend</b> do zero com uma didática
                 simples
               </h1>
-              <p class="delayLargeReveal">
+              <p>
                 Trabalhe de casa, usando as tecnologias mais requisitados do
                 mercado frontend.
               </p>
             </div>
 
-            <article class="delayExtraBigReveal">
+            <article>
               <div>
                 <h2>85% off</h2>
                 <p>Por tempo limitado</p>
@@ -119,10 +149,14 @@
 
       <section id="s-advantage">
         <div class="grid-layout">
-          <div class="cards-advantage delayMediumReveal">
+          <div class="cards-advantage">
             <article>
               <span>
-                <img src="./assets/icons/clock.svg" alt="ícone de relógio" />
+                <img
+                  src="./assets/icons/clock.svg"
+                  alt="ícone de relógio"
+                  onload="SVGInject(this)"
+                />
                 <h3>Reembolso</h3>
               </span>
               <p>
@@ -136,6 +170,7 @@
                 <img
                   src="./assets/icons/lightning.svg"
                   alt="ícone de um raio"
+                  onload="SVGInject(this)"
                 />
                 <h3>Vitalício</h3>
               </span>
@@ -147,7 +182,11 @@
 
             <article>
               <span>
-                <img src="./assets/icons/discord.svg" alt="ícone de um livro" />
+                <img
+                  src="./assets/icons/discord.svg"
+                  alt="ícone de um livro"
+                  onload="SVGInject(this)"
+                />
                 <h3>Comunidade</h3>
               </span>
               <p>
@@ -158,7 +197,11 @@
 
             <article>
               <span>
-                <img src="./assets/icons/target.svg" alt="ícone de um alvo" />
+                <img
+                  src="./assets/icons/target.svg"
+                  alt="ícone de um alvo"
+                  onload="SVGInject(this)"
+                />
                 <h3>Notion</h3>
               </span>
               <p>
@@ -173,18 +216,19 @@
       <section id="s-sample">
         <div class="grid-layout">
           <div>
-            <h3 class="delayExtraBigReveal">Tudo em um só ebook</h3>
-            <h2 class="delayMediumReveal">
+            <h3>Tudo em um só ebook</h3>
+            <h2>
               Coloquei neste ebook tudo aquilo que eu
               <b>gostaria de ter aprendido</b>
               ao estudar frontend
             </h2>
 
-            <ul class="delayLargeReveal">
+            <ul>
               <li>
                 <img
                   src="./assets/icons/check.svg"
                   alt="Ícone de confirmação"
+                  onload="SVGInject(this)"
                 />
                 <p>+16 módulos sobre desenvolvimento frontend.</p>
               </li>
@@ -192,6 +236,7 @@
                 <img
                   src="./assets/icons/check.svg"
                   alt="Ícone de confirmação"
+                  onload="SVGInject(this)"
                 />
                 <p>Com uma didática muito simples de aprender.</p>
               </li>
@@ -199,6 +244,7 @@
                 <img
                   src="./assets/icons/check.svg"
                   alt="Ícone de confirmação"
+                  onload="SVGInject(this)"
                 />
                 <p>Conceitos do básico ao avançado.</p>
               </li>
@@ -206,6 +252,7 @@
                 <img
                   src="./assets/icons/check.svg"
                   alt="Ícone de confirmação"
+                  onload="SVGInject(this)"
                 />
                 <p>
                   Explicações de fácil entendimento e repleto de ilustrações.
@@ -215,24 +262,20 @@
                 <img
                   src="./assets/icons/check.svg"
                   alt="Ícone de confirmação"
+                  onload="SVGInject(this)"
                 />
                 <p>Questionários e exercícios práticos para cada módulo.</p>
               </li>
             </ul>
 
             <div>
-              <a
-                href="./ebook.pdf"
-                download="eFront (amostra)"
-                class="delayExtraBigReveal"
-              >
+              <a href="./ebook.pdf" download="eFront (amostra)">
                 <button>Baixar amostra</button>
               </a>
 
               <a
                 href="https://pay.hotmart.com/L66686646K?checkoutMode=10"
                 target="_blank"
-                class="delayExtraBigReveal"
                 >Comprar agora</a
               >
             </div>
@@ -240,9 +283,10 @@
 
           <div>
             <img
-              src="./assets/image/ebook-amostra.svg"
+              src="./assets/image/ebook-amostra.png"
               alt="Amostra do ebook"
-              class="delayLargeReveal"
+              width="500"
+              height="598"
             />
           </div>
         </div>
@@ -251,17 +295,15 @@
       <section id="s-about">
         <div class="grid-layout">
           <div>
-            <div id="creator-photo" class="delayMediumReveal">
-              <h3 class="delayExtraBigReveal">Criador do eFront</h3>
+            <div id="creator-photo">
+              <h3>Criador do eFront</h3>
             </div>
             <div>
-              <h4 class="delayMediumReveal">Fala Dev</h4>
-              <h2 class="delaySmallReveal">Iuri Silva</h2>
-              <h3 class="delayMediumReveal">
-                Frontend Developer & UI Designer
-              </h3>
+              <h4>Fala Dev</h4>
+              <h2>Iuri Silva</h2>
+              <h3>Frontend Developer & UI Designer</h3>
 
-              <p class="delayLargeReveal">
+              <p>
                 Meu nome é Iuri e sou o criador do eFront, um material de ensino
                 de frontend pela internet. Passei por toda dificuldade de
                 encontrar materiais adaptados para entrar no mercado, e hoje, me
@@ -273,7 +315,6 @@
                 href="https://www.instagram.com/iuricode/"
                 rel="noopener"
                 target="_blank"
-                class="delayExtraBigReveal"
                 >@iuricode</a
               >
             </div>
@@ -283,28 +324,50 @@
 
       <section id="s-salary">
         <div class="grid-layout">
-          <h5 class="delayExtraBigReveal">Fonte: GlassDoor e linkedin</h5>
-          <h2 class="delayLargeReveal">
-            Quanto <b>ganha</b> um desenvolvedor no Brasil
-          </h2>
-          <div class="cards-salary delayMediumReveal">
+          <h3>Fonte: GlassDoor e linkedin</h3>
+          <h2>Quanto <b>ganha</b> um desenvolvedor no Brasil</h2>
+          <div class="cards-salary">
             <article>
-              <img src="./assets/icons/asterisk.svg" alt="ícone de estrela" />
+              <img
+                src="./assets/icons/asterisk.svg"
+                alt="ícone de estrela"
+                onload="SVGInject(this)"
+              />
               <h3>Salário Júnior</h3>
               <h4>2-4K</h4>
             </article>
 
             <article>
-              <img src="./assets/icons/asterisk.svg" alt="ícone de estrela" />
-              <img src="./assets/icons/asterisk.svg" alt="ícone de estrela" />
+              <img
+                src="./assets/icons/asterisk.svg"
+                alt="ícone de estrela"
+                onload="SVGInject(this)"
+              />
+              <img
+                src="./assets/icons/asterisk.svg"
+                alt="ícone de estrela"
+                onload="SVGInject(this)"
+              />
               <h3>Salário Pleno</h3>
               <h4>4-7K</h4>
             </article>
 
             <article>
-              <img src="./assets/icons/asterisk.svg" alt="ícone de estrela" />
-              <img src="./assets/icons/asterisk.svg" alt="ícone de estrela" />
-              <img src="./assets/icons/asterisk.svg" alt="ícone de estrela" />
+              <img
+                src="./assets/icons/asterisk.svg"
+                alt="ícone de estrela"
+                onload="SVGInject(this)"
+              />
+              <img
+                src="./assets/icons/asterisk.svg"
+                alt="ícone de estrela"
+                onload="SVGInject(this)"
+              />
+              <img
+                src="./assets/icons/asterisk.svg"
+                alt="ícone de estrela"
+                onload="SVGInject(this)"
+              />
               <h3>Salário Sênior</h3>
               <h4>7-20K</h4>
             </article>
@@ -314,17 +377,17 @@
 
       <section id="s-technologies">
         <div class="grid-layout">
-          <h4 class="delayExtraBigReveal">As melhores tecnologias</h4>
-          <h2 class="delayLargeReveal">
+          <h4>As melhores tecnologias</h4>
+          <h2>
             As tecnologias para você iniciar e
             <b>entrar no mercado</b> frontend
           </h2>
 
-          <div class="cards delayMediumReveal">
+          <div class="cards">
             <article>
               <img
                 src="./assets/icons/html.svg"
-                alt="ícone do html"
+                alt="Ícone do HTML"
                 onload="SVGInject(this)"
               />
               <h3>HTML</h3>
@@ -337,7 +400,7 @@
             <article>
               <img
                 src="./assets/icons/css.svg"
-                alt="ícone do css"
+                alt="Ícone do CSS"
                 onload="SVGInject(this)"
               />
               <h3>CSS</h3>
@@ -350,7 +413,7 @@
             <article>
               <img
                 src="./assets/icons/javascript.svg"
-                alt="ícone do javascript"
+                alt="Ícone do JavaScript"
                 onload="SVGInject(this)"
               />
               <h3>JavaScript</h3>
@@ -363,7 +426,7 @@
             <article>
               <img
                 src="./assets/icons/sass.svg"
-                alt="ícone do sass"
+                alt="Ícone do Sass"
                 onload="SVGInject(this)"
               />
               <h3>Sass</h3>
@@ -376,7 +439,7 @@
             <article>
               <img
                 src="./assets/icons/bootstrap.svg"
-                alt="ícone do bootstrap"
+                alt="Ícone do Bootstrap"
                 onload="SVGInject(this)"
               />
               <h3>Bootstrap</h3>
@@ -389,7 +452,7 @@
             <article>
               <img
                 src="./assets/icons/react.svg"
-                alt="ícone do react"
+                alt="Ícone do React"
                 onload="SVGInject(this)"
               />
               <h3>React</h3>
@@ -402,7 +465,7 @@
             <article>
               <img
                 src="./assets/icons/reactrouter.svg"
-                alt="ícone do react router"
+                alt="Ícone do React Router"
                 onload="SVGInject(this)"
               />
               <h3>React Router</h3>
@@ -415,7 +478,7 @@
             <article>
               <img
                 src="./assets/icons/typescript.svg"
-                alt="ícone do typescript"
+                alt="Ícone do TypeScript"
                 onload="SVGInject(this)"
               />
               <h3>TypeScript</h3>
@@ -429,7 +492,7 @@
             <article>
               <img
                 src="./assets/icons/styled-components.svg"
-                alt="ícone do styled-components"
+                alt="Ícone do styled-components"
                 onload="SVGInject(this)"
               />
               <h3>styled-components</h3>
@@ -442,7 +505,7 @@
             <article>
               <img
                 src="./assets/icons/tailwindcss.svg"
-                alt="ícone do tailwind css"
+                alt="Ícone do Tailwind CSS"
                 onload="SVGInject(this)"
               />
               <h3>Tailwind CSS</h3>
@@ -455,7 +518,7 @@
             <article>
               <img
                 src="./assets/icons/form.svg"
-                alt="ícone do react hook form"
+                alt="Ícone do React Hook Form"
                 onload="SVGInject(this)"
               />
               <h3>React Hook Form</h3>
@@ -468,7 +531,7 @@
             <article>
               <img
                 src="./assets/icons/ux.svg"
-                alt="ícone do ux"
+                alt="Ícone do UX"
                 onload="SVGInject(this)"
               />
               <h3>UX Design</h3>
@@ -481,7 +544,7 @@
             <article class="technologies">
               <img
                 src="./assets/icons/radix.svg"
-                alt="ícone do radix"
+                alt="Ícone do Radix UI"
                 onload="SVGInject(this)"
               />
               <h3>Radix UI</h3>
@@ -494,7 +557,7 @@
             <article class="technologies">
               <img
                 src="./assets/icons/storybook.svg"
-                alt="ícone do storybook"
+                alt="Ícone do Storybook"
                 onload="SVGInject(this)"
               />
               <h3>Storybook</h3>
@@ -507,7 +570,7 @@
             <article class="technologies">
               <img
                 src="./assets/icons/cypress.svg"
-                alt="ícone do cypress"
+                alt="Ícone do Cypress"
                 onload="SVGInject(this)"
               />
               <h3>Cypress</h3>
@@ -520,7 +583,7 @@
             <article class="technologies">
               <img
                 src="./assets/icons/next.svg"
-                alt="ícone do next"
+                alt="Ícone do Next.js"
                 onload="SVGInject(this)"
                 id="next-icon"
               />
@@ -535,17 +598,20 @@
         </div>
       </section>
 
-      <section id="s-students">
+      <section id="s-notion-students">
         <div class="grid-layout">
           <article>
             <div>
-              <img src="assets/image/illustration.svg" alt="Foto de um mago" />
+              <img
+                src="assets/image/illustration.png"
+                alt="Foto Bruxo"
+                width="666"
+                height="631"
+              />
             </div>
             <div>
-              <h2 class="delayExtraBigReveal">
-                Mais de <b>6 mil devs</b> já se conectaram
-              </h2>
-              <p class="delayLargeReveal">
+              <h2>Mais de <b>6 mil devs</b> já se conectaram</h2>
+              <p>
                 Trabalhe de casa, usando as tecnologias mais requisitados do
                 mercado frontend.
               </p>
@@ -553,9 +619,8 @@
                 href="https://pay.hotmart.com/L66686646K?checkoutMode=10"
                 rel="noopener"
                 target="_blank"
-                class="delayMediumReveal"
               >
-                <button>Quero fazer parte</button>
+                Quero fazer parte
               </a>
             </div>
           </article>
@@ -574,17 +639,20 @@
         </div>
       </section>
 
-      <section id="s-notion">
+      <section id="s-notion-students">
         <div class="grid-layout">
           <article>
             <div>
-              <img src="assets/image/notion.svg" alt="Foto de um mago" />
+              <img
+                src="assets/image/notion.png"
+                alt="Logo Notion"
+                width="1068"
+                height="1032"
+              />
             </div>
             <div>
-              <h2 class="delayExtraBigReveal">
-                Acesso à <b>minha lista</b> com + 500 links
-              </h2>
-              <p class="delayLargeReveal">
+              <h2>Acesso à <b>minha lista</b> com + 500 links</h2>
+              <p>
                 Esses links representam uma seleção dos melhores recursos
                 gratuitos disponíveis.
               </p>
@@ -592,9 +660,8 @@
                 href="https://pay.hotmart.com/L66686646K?checkoutMode=10"
                 rel="noopener"
                 target="_blank"
-                class="delayMediumReveal"
               >
-                <button>Quero ter acesso</button>
+                Quero ter acesso
               </a>
             </div>
           </article>
@@ -605,15 +672,33 @@
         <div class="grid-layout">
           <div class="container-depositions">
             <div class="text-depositions">
-              <h2 class="delayMediumReveal">
-                O que alguns dos nossos <b>alunos</b> estão falando
-              </h2>
+              <h2>O que alguns dos nossos <b>alunos</b> estão falando</h2>
 
-              <span class="delayExtraBigReveal">
-                <img src="./assets/image/rosana.svg" alt="Foto aluno" />
-                <img src="./assets/image/marcos.svg" alt="Foto aluno" />
-                <img src="./assets/image/fernanda.svg" alt="Foto aluno" />
-                <img src="./assets/image/amanda.svg" alt="Foto aluno" />
+              <span>
+                <img
+                  src="./assets/image/rosana.png"
+                  alt="Foto da Rosana"
+                  width="48"
+                  height="48"
+                />
+                <img
+                  src="./assets/image/marcos.png"
+                  alt="Foto do Marcos"
+                  width="48"
+                  height="48"
+                />
+                <img
+                  src="./assets/image/fernanda.png"
+                  alt="Foto da Fernanda"
+                  width="48"
+                  height="48"
+                />
+                <img
+                  src="./assets/image/amanda.png"
+                  alt="Foto da Amanda"
+                  width="48"
+                  height="48"
+                />
                 <img
                   src="./assets/icons/seal-check.svg"
                   alt="Ícone"
@@ -622,8 +707,8 @@
                 <p>Junta-se a +6.000 alunos</p>
               </span>
 
-              <h5 class="delayMediumReveal">Nota hotmart</h5>
-              <h4 class="delayExtraBigReveal">4,9 / 5.0</h4>
+              <h3>Nota hotmart</h3>
+              <h4>4,9 / 5.0</h4>
             </div>
 
             <div class="depositions">
@@ -636,13 +721,20 @@
 
                 <div>
                   <img
-                    src="assets/image/fernanda.svg"
-                    alt="Foto do comprador"
+                    src="assets/image/fernanda.png"
+                    alt="Foto da Fernanda"
+                    width="48"
+                    height="48"
                   />
 
                   <span>
                     <h3>Fernanda Gomes</h3>
-                    <a href="#">@itsf3r</a>
+                    <a
+                      href="https://www.instagram.com/itsf3r"
+                      rel="noopener"
+                      target="_blank"
+                      >@itsf3r</a
+                    >
                   </span>
                 </div>
               </article>
@@ -656,11 +748,21 @@
                 </p>
 
                 <div>
-                  <img src="assets/image/rosana.svg" alt="Foto do comprador" />
+                  <img
+                    src="assets/image/rosana.png"
+                    alt="Foto da Rosana"
+                    width="48"
+                    height="48"
+                  />
 
                   <span>
                     <h3>Rosana Cristina</h3>
-                    <a href="#">@rosana.mascena</a>
+                    <a
+                      href="https://www.instagram.com/rosana.mascena"
+                      rel="noopener"
+                      target="_blank"
+                      >@rosana.mascena</a
+                    >
                   </span>
                 </div>
               </article>
@@ -674,11 +776,21 @@
                 </p>
 
                 <div>
-                  <img src="assets/image/marcos.svg" alt="Foto do comprador" />
+                  <img
+                    src="assets/image/marcos.png"
+                    alt="Foto do Marcos"
+                    width="48"
+                    height="48"
+                  />
 
                   <span>
                     <h3>Marcos Emanuel</h3>
-                    <a href="#">@marquinho.tsx</a>
+                    <a
+                      href="https://www.instagram.com/marquinho.tsx"
+                      rel="noopener"
+                      target="_blank"
+                      >@marquinho.tsx</a
+                    >
                   </span>
                 </div>
               </article>
@@ -692,11 +804,21 @@
                 </p>
 
                 <div>
-                  <img src="assets/image/amanda.svg" alt="Foto do comprador" />
+                  <img
+                    src="assets/image/amanda.png"
+                    alt="Foto da Amanda"
+                    width="48"
+                    height="48"
+                  />
 
                   <span>
                     <h3>Amanda Carvalho</h3>
-                    <a href="#">@amandaacarvalh_</a>
+                    <a
+                      href="https://www.instagram.com/amandaacarvalh_"
+                      rel="noopener"
+                      target="_blank"
+                      >@amandaacarvalh_</a
+                    >
                   </span>
                 </div>
               </article>
@@ -709,7 +831,7 @@
         <div class="grid-layout">
           <article>
             <div>
-              <h2 class="delayMediumReveal">
+              <h2>
                 Amplie seus conhecimentos no frontend com o <b>eFront Plus</b>
               </h2>
             </div>
@@ -719,11 +841,10 @@
                 href="https://pay.hotmart.com/X83677661Q?checkoutMode=10"
                 rel="noopener"
                 target="_blank"
-                class="delayExtraBigReveal"
               >
                 <button>Quero comprar também</button>
               </a>
-              <p class="delayExtraBigReveal">Dê um boost nos estudos</p>
+              <p>Dê um boost nos estudos</p>
             </span>
           </article>
         </div>
@@ -734,16 +855,34 @@
           <div class="container-start">
             <div>
               <div>
-                <h5 class="delayExtraBigReveal">E aí, bora dar um boost?</h5>
-                <h2 class="delayLargeReveal">
-                  Inicie sua jornada no frontend agora!
-                </h2>
+                <h3>E aí, bora dar um boost?</h3>
+                <h2>Inicie sua jornada no frontend agora!</h2>
 
-                <span class="delayExtraBigReveal">
-                  <img src="./assets/image/rosana.svg" alt="Foto aluno" />
-                  <img src="./assets/image/marcos.svg" alt="Foto aluno" />
-                  <img src="./assets/image/fernanda.svg" alt="Foto aluno" />
-                  <img src="./assets/image/amanda.svg" alt="Foto aluno" />
+                <span>
+                  <img
+                    src="./assets/image/rosana.png"
+                    alt="Foto da Rosana"
+                    width="48"
+                    height="48"
+                  />
+                  <img
+                    src="./assets/image/marcos.png"
+                    alt="Foto do Marcos"
+                    width="48"
+                    height="48"
+                  />
+                  <img
+                    src="./assets/image/fernanda.png"
+                    alt="Foto da Fernanda"
+                    width="48"
+                    height="48"
+                  />
+                  <img
+                    src="./assets/image/amanda.png"
+                    alt="Foto da Amanda"
+                    width="48"
+                    height="48"
+                  />
                   <img
                     src="./assets/icons/seal-check.svg"
                     alt="Ícone"
@@ -756,7 +895,7 @@
 
             <article>
               <div>
-                <h6>85% off</h6>
+                <h2>85% off</h2>
                 <p>Por tempo limitado</p>
               </div>
 
@@ -785,26 +924,26 @@
         <div class="grid-layout">
           <div class="container-faq">
             <div>
-              <h2 class="delayMediumReveal">Perguntas frequentes</h2>
+              <h2>Perguntas frequentes</h2>
 
-              <p class="delayLargeReveal">
+              <p>
                 Essas são algumas perguntas frequentes que recebo em meu
                 Instagram e LinkedIn.
               </p>
 
-              <p class="card-faq delayExtraBigReveal">
+              <p class="card-faq">
                 Ao apoiar-me na produção e fornecimento de mais conteúdo
                 gratuito para a comunidade, você também está contribuindo para
                 as doações para animais de rua.
               </p>
 
-              <p class="delayLargeReveal">
+              <p>
                 Copyright © 2022
                 <a href="https://iuricode.com/">iuricode.com</a>
               </p>
             </div>
 
-            <div class="delayMediumReveal">
+            <div>
               <article>
                 <div class="accordion">
                   <h3>É um curso com vídeos aulas?</h3>
@@ -874,9 +1013,9 @@
 
     <footer>
       <div class="grid-layout">
-        <h3 class="delayLargeReveal">85% off</h3>
-        <h2 class="delaySmallReveal">Venha aprender comigo!</h2>
-        <p class="delayMediumReveal">
+        <h3>85% off</h3>
+        <h2>Venha aprender comigo!</h2>
+        <p>
           Um ebook completo que te leva do zero ao nível mais avançado como dev
           frontend.
         </p>
@@ -885,14 +1024,12 @@
           href="https://pay.hotmart.com/L66686646K?checkoutMode=10"
           rel="noopener"
           target="_blank"
-          class="delayExtraBigReveal"
         >
           <button>Adquirir agora</button>
         </a>
       </div>
     </footer>
 
-    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
     <script type="module" src="assets/js/main.js"></script>
   </body>
 </html>

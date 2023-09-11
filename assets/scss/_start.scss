@@ -29,7 +29,7 @@
         padding: $gap-40 $gap-24;
       }
 
-      h5 {
+      h3 {
         font-size: 1.6rem;
         font-weight: 500;
         color: $color-eplus;
@@ -67,6 +67,7 @@
         }
 
         svg {
+          width: 40px;
           margin-left: -8px;
         }
 
@@ -77,7 +78,7 @@
         p {
           font-size: 1.8rem;
           font-weight: 400;
-          margin-left: $gap-16;
+          margin-left: $gap-24;
           font-family: $font-title;
         }
       }
@@ -101,7 +102,7 @@
         flex-wrap: wrap;
         gap: $gap-24;
 
-        h6 {
+        h2 {
           background-color: $color-dark;
           color: $color-white;
           font-size: 1.8rem;

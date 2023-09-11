@@ -26,7 +26,7 @@
             rgba(11, 12, 20, 0) 0%,
             #0b0c14 100%
           ),
-          url("../image/foto-iuricode.png"), no-repeat;
+          url("../image/iuri.png"), no-repeat;
 
         background-position: center;
         background-size: cover;
@@ -91,17 +91,21 @@
           font-size: 1.8rem;
           color: $color-gray;
           line-height: 160%;
-          margin: $gap-40 0px $gap-48 0px;
+          margin: $gap-40 0;
         }
 
         a {
           color: $color-white;
-          font-size: 2rem;
+          font-size: 1.8rem;
           font-family: $font-title;
           text-decoration: underline;
 
           &:hover {
             color: $color-eplus;
+          }
+
+          @include responsive-tablet {
+            display: none;
           }
         }
       }
