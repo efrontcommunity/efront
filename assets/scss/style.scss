@@ -1,13 +1,15 @@
 @import "./variables", "./reset", "./menu", "./home", "./cards", "./advantage",
   "./technologies", "./about", "./salary", "./students", "./depositions",
-  "./companies", "./start", "./notion", "./eplus", "./faq", "./footer",
+  "./jobs", "./start", "./notion", "./eplus", "./faq", "./footer",
   "./sample";
 
 #info-promotion {
-  background: $color-primary;
+  background: $color-eplus;
 
   width: 100%;
-  height: 40px;
+  height: auto;
+
+  padding: 12px;
 
   display: flex;
   align-items: center;
@@ -18,17 +20,12 @@
   position: fixed;
   top: 0;
   left: 0;
-
   z-index: 999;
 
   p {
-    color: $color-white;
-    font-size: 1.8rem;
-    font-weight: 400;
-
-    @include responsive-tablet {
-      font-size: 1.6rem;
-    }
+    color: $color-dark;
+    font-size: 1.6rem;
+    font-weight: 500;
   }
 }
 

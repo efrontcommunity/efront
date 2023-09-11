@@ -9,7 +9,7 @@
       content="efront, ebook, hotmart, iuricode, frontend, html, css, javascript, sass, bootstrap, react, react router, typescript, styled-components, tailwind, react hook form, radix, storybook "
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#986dff" />
+    <meta name="theme-color" content="#899bff" />
     <meta name="copyright" content="Iuri Silva" />
     <meta http-equiv="content-language" content="pt-br" />
     <meta property="og:image" content="assets/image/preview.png" />
@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Space+Grotesk:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -38,7 +38,9 @@
   </head>
   <body>
     <header id="info-promotion" class="delayExtraBigReveal">
-      <p>Você aprende e doa! 5% de cada venda será doado para ONGs de animais</p>
+      <p>
+        Você aprende e doa! 5% de cada venda será doado para ONGs de animais
+      </p>
     </header>
 
     <main>
@@ -46,7 +48,7 @@
         <div class="grid-layout">
           <div>
             <img
-              src="./assets/image/logo.svg"
+              src="./assets/icons/logo-large.svg"
               alt="Logo do eFront"
               onload="SVGInject(this)"
             />
@@ -55,13 +57,7 @@
           <div>
             <nav>
               <ul>
-                <li><a href="#s-home">Início</a></li>
-                <li><a href="#s-sample">Amostra</a></li>
-                <li><a href="#s-about">Quem sou</a></li>
-                <li><a href="#s-salary">Salários</a></li>
-                <li><a href="#s-technologies">Tecnologias</a></li>
-                <li><a href="#s-depositions">Depoimentos</a></li>
-                <li><a href="#s-faq">FAQ</a></li>
+                <li><a href="#s-faq">Perguntas frequentes</a></li>
               </ul>
             </nav>
           </div>
@@ -73,12 +69,16 @@
           <div id="container-home">
             <div id="info-main" class="delayLargeReveal">
               <span class="delayExtraBigReveal">
+                <img src="./assets/image/rosana.svg" alt="Foto aluno" />
+                <img src="./assets/image/marcos.svg" alt="Foto aluno" />
+                <img src="./assets/image/fernanda.svg" alt="Foto aluno" />
+                <img src="./assets/image/amanda.svg" alt="Foto aluno" />
                 <img
-                  src="./assets/icons/student.svg"
-                  alt="Logo de formado"
+                  src="./assets/icons/seal-check.svg"
+                  alt="Ícone"
                   onload="SVGInject(this)"
                 />
-                <p>Junta-se a +5.000 membros</p>
+                <p>Junta-se a +6.000 alunos</p>
               </span>
               <h1>
                 Comece a estudar <b>frontend</b> do zero com uma didática
@@ -92,13 +92,13 @@
 
             <article class="delayExtraBigReveal">
               <div>
-                <h2>80% off</h2>
+                <h2>85% off</h2>
                 <p>Por tempo limitado</p>
               </div>
 
               <div>
                 <h3>De <span>R$ 100,00</span> por</h3>
-                <h4>R$ 20,00</h4>
+                <h4>R$ 15,00</h4>
               </div>
 
               <a
@@ -119,14 +119,12 @@
 
       <section id="s-advantage">
         <div class="grid-layout">
-          <div class="cards delayMediumReveal">
+          <div class="cards-advantage delayMediumReveal">
             <article>
-              <img
-                src="./assets/icons/clock.svg"
-                alt="ícone de relógio"
-                onload="SVGInject(this)"
-              />
-              <h3>7 dias de garantia</h3>
+              <span>
+                <img src="./assets/icons/clock.svg" alt="ícone de relógio" />
+                <h3>Reembolso</h3>
+              </span>
               <p>
                 Se por algum motivo você não gostar dos materiais você pode
                 reembolsar sem taxa e perguntas.
@@ -134,25 +132,24 @@
             </article>
 
             <article>
-              <img
-                src="./assets/icons/lightning.svg"
-                alt="ícone de um raio"
-                onload="SVGInject(this)"
-              />
-              <h3>Acesso vitalício</h3>
+              <span>
+                <img
+                  src="./assets/icons/lightning.svg"
+                  alt="ícone de um raio"
+                />
+                <h3>Vitalício</h3>
+              </span>
               <p>
-                Você tem acesso a todas as atualizações e para sempre (sem
-                pagar). Basta acessar a plataforma da Hotmart.
+                Você tem acesso a todas as atualizações e para sempre. Basta
+                acessar a plataforma da Hotmart.
               </p>
             </article>
 
             <article>
-              <img
-                src="./assets/icons/discord.svg"
-                alt="ícone de um livro"
-                onload="SVGInject(this)"
-              />
-              <h3>Comunidade</h3>
+              <span>
+                <img src="./assets/icons/discord.svg" alt="ícone de um livro" />
+                <h3>Comunidade</h3>
+              </span>
               <p>
                 Você terá acesso a comunidade exclusiva do Discord, onde
                 utilizamos para resolver dúvidas.
@@ -160,12 +157,10 @@
             </article>
 
             <article>
-              <img
-                src="./assets/icons/target.svg"
-                alt="ícone de um alvo"
-                onload="SVGInject(this)"
-              />
-              <h3>Notion</h3>
+              <span>
+                <img src="./assets/icons/target.svg" alt="ícone de um alvo" />
+                <h3>Notion</h3>
+              </span>
               <p>
                 Através do Notion você tem acesso aos materiais para realizar os
                 estudos sobre frontend e design.
@@ -178,26 +173,25 @@
       <section id="s-sample">
         <div class="grid-layout">
           <div>
-            <h2>
+            <h3 class="delayExtraBigReveal">Tudo em um só ebook</h3>
+            <h2 class="delayMediumReveal">
               Coloquei neste ebook tudo aquilo que eu
               <b>gostaria de ter aprendido</b>
               ao estudar frontend
             </h2>
 
-            <ul class="delayExtraBigReveal">
+            <ul class="delayLargeReveal">
               <li>
                 <img
                   src="./assets/icons/check.svg"
                   alt="Ícone de confirmação"
-                  onload="SVGInject(this)"
                 />
-                <p>+ 17 módulos sobre desenvolvimento frontend.</p>
+                <p>+16 módulos sobre desenvolvimento frontend.</p>
               </li>
               <li>
                 <img
                   src="./assets/icons/check.svg"
                   alt="Ícone de confirmação"
-                  onload="SVGInject(this)"
                 />
                 <p>Com uma didática muito simples de aprender.</p>
               </li>
@@ -205,7 +199,6 @@
                 <img
                   src="./assets/icons/check.svg"
                   alt="Ícone de confirmação"
-                  onload="SVGInject(this)"
                 />
                 <p>Conceitos do básico ao avançado.</p>
               </li>
@@ -213,7 +206,6 @@
                 <img
                   src="./assets/icons/check.svg"
                   alt="Ícone de confirmação"
-                  onload="SVGInject(this)"
                 />
                 <p>
                   Explicações de fácil entendimento e repleto de ilustrações.
@@ -223,7 +215,6 @@
                 <img
                   src="./assets/icons/check.svg"
                   alt="Ícone de confirmação"
-                  onload="SVGInject(this)"
                 />
                 <p>Questionários e exercícios práticos para cada módulo.</p>
               </li>
@@ -277,82 +268,14 @@
                 dedico a produção de conteúdo de frontend para ajudar o maior
                 número de pessoas possível a aprender.
               </p>
-              <nav class="delayLargeReveal">
-                <ul>
-                  <a
-                    href="https://www.instagram.com/iuricode/"
-                    rel="noopener"
-                    target="_blank"
-                    ><li>
-                      <img
-                        src="./assets/icons/instagram.svg"
-                        alt="Ícone do Instagram"
-                        onload="SVGInject(this)"
-                      /></li
-                  ></a>
 
-                  <a
-                    href="https://www.linkedin.com/in/iuricode/"
-                    rel="noopener"
-                    target="_blank"
-                    ><li>
-                      <img
-                        src="./assets/icons/linkedin.svg"
-                        rel="noopener"
-                        alt="Ícone do LinkedIn"
-                        onload="SVGInject(this)"
-                      /></li
-                  ></a>
-
-                  <a
-                    href="https://iuricode-blog.vercel.app/"
-                    rel="noopener"
-                    target="_blank"
-                    ><li>
-                      <img
-                        src="./assets/icons/laptop.svg"
-                        alt="Ícone de um laptop"
-                        onload="SVGInject(this)"
-                      /></li
-                  ></a>
-
-                  <a
-                    href="https://discord.com/invite/QevDJqCzaY"
-                    rel="noopener"
-                    target="_blank"
-                    ><li>
-                      <img
-                        src="./assets/icons/discord.svg"
-                        alt="Ícone do Discord"
-                        onload="SVGInject(this)"
-                      /></li
-                  ></a>
-
-                  <a
-                    href="https://github.com/iuricode"
-                    rel="noopener"
-                    target="_blank"
-                    ><li>
-                      <img
-                        src="./assets/icons/github.svg"
-                        alt="Ícone do GitHub"
-                        onload="SVGInject(this)"
-                      /></li
-                  ></a>
-
-                  <a
-                    href="https://www.behance.net/iuricode"
-                    rel="noopener"
-                    target="_blank"
-                    ><li>
-                      <img
-                        src="./assets/icons/behance.svg"
-                        alt="Ícone do Behance"
-                        onload="SVGInject(this)"
-                      /></li
-                  ></a>
-                </ul>
-              </nav>
+              <a
+                href="https://www.instagram.com/iuricode/"
+                rel="noopener"
+                target="_blank"
+                class="delayExtraBigReveal"
+                >@iuricode</a
+              >
             </div>
           </div>
         </div>
@@ -360,51 +283,30 @@
 
       <section id="s-salary">
         <div class="grid-layout">
-          <h2>Quanto <b>ganha</b> um desenvolvedor no Brasil</h2>
+          <h5 class="delayExtraBigReveal">Fonte: GlassDoor e linkedin</h5>
+          <h2 class="delayLargeReveal">
+            Quanto <b>ganha</b> um desenvolvedor no Brasil
+          </h2>
           <div class="cards-salary delayMediumReveal">
             <article>
-              <img
-                src="./assets/icons/star.svg"
-                alt="ícone de estrela"
-                onload="SVGInject(this)"
-              />
+              <img src="./assets/icons/asterisk.svg" alt="ícone de estrela" />
               <h3>Salário Júnior</h3>
-              <h4>3-5K</h4>
+              <h4>2-4K</h4>
             </article>
 
             <article>
-              <img
-                src="./assets/icons/star.svg"
-                alt="ícone de estrela"
-                onload="SVGInject(this)"
-              />
-              <img
-                src="./assets/icons/star.svg"
-                alt="ícone de estrela"
-                onload="SVGInject(this)"
-              />
+              <img src="./assets/icons/asterisk.svg" alt="ícone de estrela" />
+              <img src="./assets/icons/asterisk.svg" alt="ícone de estrela" />
               <h3>Salário Pleno</h3>
-              <h4>5-9K</h4>
+              <h4>4-7K</h4>
             </article>
 
             <article>
-              <img
-                src="./assets/icons/star.svg"
-                alt="ícone de estrela"
-                onload="SVGInject(this)"
-              />
-              <img
-                src="./assets/icons/star.svg"
-                alt="ícone de estrela"
-                onload="SVGInject(this)"
-              />
-              <img
-                src="./assets/icons/star.svg"
-                alt="ícone de estrela"
-                onload="SVGInject(this)"
-              />
+              <img src="./assets/icons/asterisk.svg" alt="ícone de estrela" />
+              <img src="./assets/icons/asterisk.svg" alt="ícone de estrela" />
+              <img src="./assets/icons/asterisk.svg" alt="ícone de estrela" />
               <h3>Salário Sênior</h3>
-              <h4>9-20K</h4>
+              <h4>7-20K</h4>
             </article>
           </div>
         </div>
@@ -412,9 +314,12 @@
 
       <section id="s-technologies">
         <div class="grid-layout">
-          <h2>
-            As tecnologias para você iniciar e <b>entrar no mercado</b> frontend
+          <h4 class="delayExtraBigReveal">As melhores tecnologias</h4>
+          <h2 class="delayLargeReveal">
+            As tecnologias para você iniciar e
+            <b>entrar no mercado</b> frontend
           </h2>
+
           <div class="cards delayMediumReveal">
             <article>
               <img
@@ -637,8 +542,10 @@
               <img src="assets/image/illustration.svg" alt="Foto de um mago" />
             </div>
             <div>
-              <h2>Mais de <b>5 mil devs</b> já se conectaram</h2>
-              <p>
+              <h2 class="delayExtraBigReveal">
+                Mais de <b>6 mil devs</b> já se conectaram
+              </h2>
+              <p class="delayLargeReveal">
                 Trabalhe de casa, usando as tecnologias mais requisitados do
                 mercado frontend.
               </p>
@@ -646,6 +553,7 @@
                 href="https://pay.hotmart.com/L66686646K?checkoutMode=10"
                 rel="noopener"
                 target="_blank"
+                class="delayMediumReveal"
               >
                 <button>Quero fazer parte</button>
               </a>
@@ -654,167 +562,15 @@
         </div>
       </section>
 
-      <section id="s-depositions">
-        <div class="grid-layout">
-          <h2>O que os <b>membros</b> estão dizendo na Hotmart</h2>
-
-          <div id="container-depositions" class="delayMediumReveal">
-            <article>
-              <div>
-                <img
-                  src="./assets/image/fernanda.svg"
-                  alt="Foto da Fernanda Gomes"
-                />
-                <span>
-                  <h3>Fernanda Gomes</h3>
-                  <div>
-                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
-                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
-                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
-                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
-                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
-                  </div>
-                </span>
-              </div>
-              <p>
-                “Ebook incrível, para quem está iniciando ou quer relembrar
-                conceitos, super didático e atual às necessidades do mercado.
-                Simplesmente sensacional, parabéns Iuri, você arrasa demais.”
-              </p>
-            </article>
-
-            <article>
-              <div>
-                <img
-                  src="./assets/image/rosana.svg"
-                  alt="Foto da Rosana Cristina"
-                />
-                <span>
-                  <h3>Rosana Cristina</h3>
-                  <div>
-                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
-                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
-                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
-                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
-                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
-                  </div>
-                </span>
-              </div>
-              <p>
-                “Este conteúdo é muito bem estruturado e oferece muito mais do
-                que simples apostilas ou orientações. Ele oferece a experiência
-                de um desenvolvedor e sua capacidade de compartilhar sua
-                experiência.”
-              </p>
-            </article>
-
-            <article>
-              <div>
-                <img
-                  src="./assets/image/amanda.svg"
-                  alt="Foto do Amanda Carvalho"
-                />
-                <span>
-                  <h3>Amanda Carvalho</h3>
-                  <div>
-                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
-                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
-                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
-                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
-                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
-                  </div>
-                </span>
-              </div>
-              <p>
-                “Gostei muito do conteúdo e da didática! Obrigada por partilhar
-                o conhecimento e parabéns pelo trabalho! É de grande ajuda não
-                só para aqueles que estão iniciando mas também apra aqueles que
-                querem se aprofundar nesses assuntos!”
-              </p>
-            </article>
-
-            <article>
-              <div>
-                <img
-                  src="./assets/image/marcos.svg"
-                  alt="Foto do Marcos Emanuel"
-                />
-                <span>
-                  <h3>Marcos Emanuel</h3>
-                  <div>
-                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
-                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
-                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
-                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
-                    <img src="assets/icons/star.svg" alt="ícone de estrela" />
-                  </div>
-                </span>
-              </div>
-              <p>
-                “De longe um dos melhores materiais que pude encontrar e
-                usufruir de tecnologia para web! Foi o dinheiro mais bem gasto
-                da minha vida, super agradeço o Iuri por nos proporcionar esse
-                conhecimento!”
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="s-companies">
-        <div class="grid-layout">
-          <h2>
-            Empresas que estão <b>buscando</b> por desenvolvedores frontend
-          </h2>
-          <div class="cards-companies delayMediumReveal">
-            <article>
-              <img
-                src="./assets/icons/meta.svg"
-                alt="Logo do Meta"
-                onload="SVGInject(this)"
-              />
-            </article>
-
-            <article>
-              <img
-                src="./assets/icons/amazon.svg"
-                alt="Logo da Amazon"
-                onload="SVGInject(this)"
-              />
-            </article>
-
-            <article>
-              <img
-                src="./assets/icons/microsoft.svg"
-                alt="Logo da Microsoft"
-                onload="SVGInject(this)"
-              />
-            </article>
-
-            <article>
-              <img
-                src="./assets/icons/ifood.svg"
-                alt="Logo do iFood"
-                onload="SVGInject(this)"
-              />
-            </article>
-
-            <article>
-              <img
-                src="./assets/icons/uber.svg"
-                alt="Logo do Uber"
-                onload="SVGInject(this)"
-              />
-            </article>
-
-            <article>
-              <img
-                src="./assets/icons/airbnb.svg"
-                alt="Logo do Airbnb"
-                onload="SVGInject(this)"
-              />
-            </article>
-          </div>
+      <section id="s-jobs">
+        <div>
+          <h2>+ de 5000 vagas abertas para a área</h2>
+          <h2>+ de 5000 vagas abertas para a área</h2>
+          <h2>+ de 5000 vagas abertas para a área</h2>
+          <h2>+ de 5000 vagas abertas para a área</h2>
+          <h2>+ de 5000 vagas abertas para a área</h2>
+          <h2>+ de 5000 vagas abertas para a área</h2>
+          <h2>+ de 5000 vagas abertas para a área</h2>
         </div>
       </section>
 
@@ -825,8 +581,10 @@
               <img src="assets/image/notion.svg" alt="Foto de um mago" />
             </div>
             <div>
-              <h2>Acesso à <b>minha lista</b> de mais de 500 links úteis</h2>
-              <p>
+              <h2 class="delayExtraBigReveal">
+                Acesso à <b>minha lista</b> com + 500 links
+              </h2>
+              <p class="delayLargeReveal">
                 Esses links representam uma seleção dos melhores recursos
                 gratuitos disponíveis.
               </p>
@@ -834,6 +592,7 @@
                 href="https://pay.hotmart.com/L66686646K?checkoutMode=10"
                 rel="noopener"
                 target="_blank"
+                class="delayMediumReveal"
               >
                 <button>Quero ter acesso</button>
               </a>
@@ -842,33 +601,169 @@
         </div>
       </section>
 
+      <section id="s-depositions">
+        <div class="grid-layout">
+          <div class="container-depositions">
+            <div class="text-depositions">
+              <h2 class="delayMediumReveal">
+                O que alguns dos nossos <b>alunos</b> estão falando
+              </h2>
+
+              <span class="delayExtraBigReveal">
+                <img src="./assets/image/rosana.svg" alt="Foto aluno" />
+                <img src="./assets/image/marcos.svg" alt="Foto aluno" />
+                <img src="./assets/image/fernanda.svg" alt="Foto aluno" />
+                <img src="./assets/image/amanda.svg" alt="Foto aluno" />
+                <img
+                  src="./assets/icons/seal-check.svg"
+                  alt="Ícone"
+                  onload="SVGInject(this)"
+                />
+                <p>Junta-se a +6.000 alunos</p>
+              </span>
+
+              <h5 class="delayMediumReveal">Nota hotmart</h5>
+              <h4 class="delayExtraBigReveal">4,9 / 5.0</h4>
+            </div>
+
+            <div class="depositions">
+              <article>
+                <p>
+                  “Ebook incrível, para quem está iniciando ou quer relembrar
+                  conceitos, super didático e atual às necessidades do mercado.
+                  Simplesmente sensacional, parabéns Iuri, você arrasa demais.”
+                </p>
+
+                <div>
+                  <img
+                    src="assets/image/fernanda.svg"
+                    alt="Foto do comprador"
+                  />
+
+                  <span>
+                    <h3>Fernanda Gomes</h3>
+                    <a href="#">@itsf3r</a>
+                  </span>
+                </div>
+              </article>
+
+              <article>
+                <p>
+                  “Este conteúdo é muito bem estruturado e oferece muito mais do
+                  que simples apostilas ou orientações. Ele oferece a
+                  experiência de um desenvolvedor e sua capacidade de
+                  compartilhar sua experiência.”
+                </p>
+
+                <div>
+                  <img src="assets/image/rosana.svg" alt="Foto do comprador" />
+
+                  <span>
+                    <h3>Rosana Cristina</h3>
+                    <a href="#">@rosana.mascena</a>
+                  </span>
+                </div>
+              </article>
+
+              <article>
+                <p>
+                  “De longe um dos melhores materiais que pude encontrar e
+                  usufruir de tecnologia para web! Foi o dinheiro mais bem gasto
+                  da minha vida, super agradeço o Iuri por nos proporcionar esse
+                  conhecimento!”
+                </p>
+
+                <div>
+                  <img src="assets/image/marcos.svg" alt="Foto do comprador" />
+
+                  <span>
+                    <h3>Marcos Emanuel</h3>
+                    <a href="#">@marquinho.tsx</a>
+                  </span>
+                </div>
+              </article>
+
+              <article>
+                <p>
+                  “Gostei muito do conteúdo e da didática! Obrigada por
+                  partilhar o conhecimento e parabéns pelo trabalho! É de grande
+                  ajuda não só para aqueles que estão iniciando mas também para
+                  aqueles que querem se aprofundar nesses assuntos!”
+                </p>
+
+                <div>
+                  <img src="assets/image/amanda.svg" alt="Foto do comprador" />
+
+                  <span>
+                    <h3>Amanda Carvalho</h3>
+                    <a href="#">@amandaacarvalh_</a>
+                  </span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="s-eplus">
         <div class="grid-layout">
           <article>
             <div>
-              <img src="assets/image/eplus.svg" alt="Logo do eFront Plus" />
-              <h2>Amplie seus conhecimentos no frontend com o eFront Plus</h2>
+              <h2 class="delayMediumReveal">
+                Amplie seus conhecimentos no frontend com o <b>eFront Plus</b>
+              </h2>
             </div>
 
-            <a
-              href="https://pay.hotmart.com/X83677661Q?checkoutMode=10"
-              rel="noopener"
-              target="_blank"
-            >
-              <button>Quero comprar também</button>
-            </a>
+            <span>
+              <a
+                href="https://pay.hotmart.com/X83677661Q?checkoutMode=10"
+                rel="noopener"
+                target="_blank"
+                class="delayExtraBigReveal"
+              >
+                <button>Quero comprar também</button>
+              </a>
+              <p class="delayExtraBigReveal">Dê um boost nos estudos</p>
+            </span>
           </article>
         </div>
       </section>
 
       <section id="s-start">
         <div class="grid-layout">
-          <article>
-            <div id="cta-start" class="delayMediumReveal">
-              <h2>Aprenda desenvolvimento <b>frontend</b> de forma simples</h2>
+          <div class="container-start">
+            <div>
+              <div>
+                <h5 class="delayExtraBigReveal">E aí, bora dar um boost?</h5>
+                <h2 class="delayLargeReveal">
+                  Inicie sua jornada no frontend agora!
+                </h2>
 
-              <p>De <span>R$ 100,00</span> por apenas</p>
-              <h3>R$ 20,00</h3>
+                <span class="delayExtraBigReveal">
+                  <img src="./assets/image/rosana.svg" alt="Foto aluno" />
+                  <img src="./assets/image/marcos.svg" alt="Foto aluno" />
+                  <img src="./assets/image/fernanda.svg" alt="Foto aluno" />
+                  <img src="./assets/image/amanda.svg" alt="Foto aluno" />
+                  <img
+                    src="./assets/icons/seal-check.svg"
+                    alt="Ícone"
+                    onload="SVGInject(this)"
+                  />
+                  <p>Junta-se a +6.000 alunos</p>
+                </span>
+              </div>
+            </div>
+
+            <article>
+              <div>
+                <h6>85% off</h6>
+                <p>Por tempo limitado</p>
+              </div>
+
+              <div>
+                <h3>De <span>R$ 100,00</span> por</h3>
+                <h4>R$ 15,00</h4>
+              </div>
 
               <a
                 href="https://pay.hotmart.com/L66686646K?checkoutMode=10"
@@ -878,140 +773,100 @@
                 <button>Garantir ebook</button>
               </a>
 
-              <p>Cartão de crédito, Boleto à vista, PayPal e Pix</p>
-            </div>
-
-            <div>
-              <h4 class="delayLargeReveal">
-                Além do ebook você irá receber materiais como:
-              </h4>
-              <ul class="delayExtraBigReveal">
-                <li>
-                  <img
-                    src="./assets/icons/check.svg"
-                    alt="Ícone de confirmação"
-                    onload="SVGInject(this)"
-                  />
-                  <p>Roadmap de estudos.</p>
-                </li>
-                <li>
-                  <img
-                    src="./assets/icons/check.svg"
-                    alt="Ícone de confirmação"
-                    onload="SVGInject(this)"
-                  />
-                  <p>Materiais de apoio.</p>
-                </li>
-                <li>
-                  <img
-                    src="./assets/icons/check.svg"
-                    alt="Ícone de confirmação"
-                    onload="SVGInject(this)"
-                  />
-                  <p>Exercícios práticos.</p>
-                </li>
-                <li>
-                  <img
-                    src="./assets/icons/check.svg"
-                    alt="Ícone de confirmação"
-                    onload="SVGInject(this)"
-                  />
-                  <p>Recomendações.</p>
-                </li>
-                <li>
-                  <img
-                    src="./assets/icons/check.svg"
-                    alt="Ícone de confirmação"
-                    onload="SVGInject(this)"
-                  />
-                  <p>Projetos.</p>
-                </li>
-                <li>
-                  <img
-                    src="./assets/icons/check.svg"
-                    alt="Ícone de confirmação"
-                    onload="SVGInject(this)"
-                  />
-                  <p>Slides.</p>
-                </li>
-                <li>
-                  <img
-                    src="./assets/icons/check.svg"
-                    alt="Ícone de confirmação"
-                    onload="SVGInject(this)"
-                  />
-                  <p>Questionários.</p>
-                </li>
-              </ul>
-            </div>
-          </article>
+              <p id="info-pay">
+                Cartão de crédito, Boleto à vista, PayPal e Pix
+              </p>
+            </article>
+          </div>
         </div>
       </section>
 
       <section id="s-faq">
         <div class="grid-layout">
-          <h2>Algumas <b>perguntas frequentes</b> sobre o ebook</h2>
-          <div class="delayLargeReveal">
-            <article>
-              <div class="accordion">
-                <h3>É um curso com vídeos aulas?</h3>
-                <div class="icon">+</div>
-              </div>
-              <div class="panel">
-                <p>
-                  Não! O eFront é um <b>ebook</b> criado por mim (@iuricode)
-                  onde eu ensino a como utilizar tecnologias frontend. Tudo isso
-                  é ensinado com didática simples de entender, até quem está
-                  iniciando consegue entender o que cada linguagem faz.
-                </p>
-              </div>
-            </article>
+          <div class="container-faq">
+            <div>
+              <h2 class="delayMediumReveal">Perguntas frequentes</h2>
 
-            <article>
-              <div class="accordion">
-                <h3>Se comprar agora tem acesso a atualizações?</h3>
-                <div class="icon">+</div>
-              </div>
-              <div class="panel">
-                <p>
-                  O acesso é vitalício, então você terá acesso para sempre e com
-                  direito a receber as atualizações sem precisar pagar nada.
-                </p>
-              </div>
-            </article>
+              <p class="delayLargeReveal">
+                Essas são algumas perguntas frequentes que recebo em meu
+                Instagram e LinkedIn.
+              </p>
 
-            <article>
-              <div class="accordion">
-                <h3>Por onde eu acesso o ebook após a compra?</h3>
-                <div class="icon">+</div>
-              </div>
-              <div class="panel">
-                <p>
-                  Você irá receber o acesso do ebook por email. Mas para acessar
-                  as atualizações é preciso acessar a plataforma da Hotmart com
-                  o email que realizou a compra.
-                </p>
-              </div>
-            </article>
+              <p class="card-faq delayExtraBigReveal">
+                Ao apoiar-me na produção e fornecimento de mais conteúdo
+                gratuito para a comunidade, você também está contribuindo para
+                as doações para animais de rua.
+              </p>
 
-            <article>
-              <div class="accordion">
-                <h3>Consigo me afiliar ao ebook?</h3>
-                <div class="icon">+</div>
-              </div>
-              <div class="panel">
-                <p>
-                  Qualquer pessoa consegue se afiliar ao ebook, para isso basta
-                  acessar este
-                  <a
-                    href="https://app-vlc.hotmart.com/affiliate-recruiting/view/7479e66686667"
-                    target="_blank"
-                    >link</a
-                  >
-                  . Os afiliados ganham 50% do lucro das vendas realizadas.
-                </p>
-              </div>
-            </article>
+              <p class="delayLargeReveal">
+                Copyright © 2022
+                <a href="https://iuricode.com/">iuricode.com</a>
+              </p>
+            </div>
+
+            <div class="delayMediumReveal">
+              <article>
+                <div class="accordion">
+                  <h3>É um curso com vídeos aulas?</h3>
+                  <div class="icon">+</div>
+                </div>
+                <div class="panel">
+                  <p>
+                    Não! O eFront é um <b>ebook</b> criado por mim onde eu
+                    ensino a como utilizar tecnologias frontend. Tudo isso é
+                    ensinado com didática simples de entender, até quem está
+                    iniciando consegue entender o que cada linguagem faz.
+                  </p>
+                </div>
+              </article>
+
+              <article>
+                <div class="accordion">
+                  <h3>Se comprar agora tem acesso a atualizações?</h3>
+                  <div class="icon">+</div>
+                </div>
+                <div class="panel">
+                  <p>
+                    O acesso é vitalício, então você terá acesso para sempre e
+                    com direito a receber as atualizações sem precisar pagar
+                    nada.
+                  </p>
+                </div>
+              </article>
+
+              <article>
+                <div class="accordion">
+                  <h3>Por onde eu acesso o ebook após a compra?</h3>
+                  <div class="icon">+</div>
+                </div>
+                <div class="panel">
+                  <p>
+                    Você irá receber o acesso do ebook por email. Mas para
+                    acessar as atualizações é preciso acessar a plataforma da
+                    Hotmart com o email que realizou a compra.
+                  </p>
+                </div>
+              </article>
+
+              <article>
+                <div class="accordion">
+                  <h3>Consigo me afiliar ao ebook?</h3>
+                  <div class="icon">+</div>
+                </div>
+                <div class="panel">
+                  <p>
+                    Qualquer pessoa consegue se afiliar ao ebook, para isso
+                    basta acessar este
+                    <a
+                      href="https://app-vlc.hotmart.com/affiliate-recruiting/view/7479e66686667"
+                      target="_blank"
+                      >link</a
+                    >
+                    . Os afiliados ganham 50% do lucro das vendas realizadas.
+                  </p>
+                </div>
+              </article>
+            </div>
           </div>
         </div>
       </section>
@@ -1019,22 +874,21 @@
 
     <footer>
       <div class="grid-layout">
-        <p>
-          Copyright © 2022
-          <a href="https://iuricode.com" rel="noopener" target="_blank">
-            iuricode.com.
-          </a>
-          Todos os direitos reservados.
+        <h3 class="delayLargeReveal">85% off</h3>
+        <h2 class="delaySmallReveal">Venha aprender comigo!</h2>
+        <p class="delayMediumReveal">
+          Um ebook completo que te leva do zero ao nível mais avançado como dev
+          frontend.
         </p>
 
-        <div>
-          <p>Powered by</p>
-          <img
-            src="./assets/icons/logo-iuricode.svg"
-            alt="Logo iuricode"
-            onload="SVGInject(this)"
-          />
-        </div>
+        <a
+          href="https://pay.hotmart.com/L66686646K?checkoutMode=10"
+          rel="noopener"
+          target="_blank"
+          class="delayExtraBigReveal"
+        >
+          <button>Adquirir agora</button>
+        </a>
       </div>
     </footer>
 

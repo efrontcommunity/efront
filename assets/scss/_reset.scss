@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: $font-descripiton;
+  font-family: $font-description;
 }
 
 ul,
@@ -24,7 +24,7 @@ img {
 
 p {
   margin: 0;
-  font-family: $font-descripiton;
+  font-family: $font-description;
 }
 
 button {
@@ -46,14 +46,15 @@ h6 {
 button,
 input {
   border: 0;
-  font-family: $font-title;
+  font-family: $font-description;
+  font-weight: 500;
   &:focus {
     border: 0;
   }
 }
 
 body {
-  font-family: $font-descripiton;
+  font-family: $font-description;
   background-color: $color-dark;
   color: $color-white;
   overflow-x: hidden;
@@ -63,17 +64,4 @@ body {
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
-}
-
-::-webkit-scrollbar {
-  width: $gap-8;
-}
-
-::-webkit-scrollbar-track {
-  background-color: $color-dark-400;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #986dff;
-  border-radius: $gap-8;
 }

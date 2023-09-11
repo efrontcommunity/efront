@@ -5,102 +5,167 @@
     padding: $gap-40 0px;
   }
 
-  article {
-    padding: $gap-80;
-    background-color: $color-dark-200;
-    border: 2px solid $color-dark-400;
+  .container-start {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: $gap-80;
-    border-radius: 4px;
+    align-items: stretch;
 
     @include responsive-desktop {
       flex-wrap: wrap;
-      padding: $gap-24;
     }
 
-    #cta-start {
-      text-align: center;
+    > div:nth-child(1) {
+      width: 60%;
+      height: auto;
 
-      p {
-        margin: $gap-16 0px;
+      padding: $gap-80;
+      background-color: $color-dark-200;
+      border: 1px solid $color-dark-400;
+
+      display: flex;
+      align-items: center;
+
+      @include responsive-desktop {
+        width: 100%;
+        padding: $gap-40 $gap-24;
+      }
+
+      h5 {
+        font-size: 1.6rem;
         font-weight: 500;
+        color: $color-eplus;
+        text-transform: uppercase;
+        font-family: $font-description;
+      }
 
-        span {
-          text-decoration: line-through;
+      h2 {
+        font-size: 4.8rem;
+        font-weight: 400;
+        margin: $gap-16 0 $gap-48 0;
+
+        @include responsive-desktop {
+          font-size: 3.2rem;
+          margin: $gap-16 0 $gap-32 0;
+        }
+
+        @include responsive-mobile {
+          margin: $gap-16 0 0 0;
+        }
+      }
+
+      span {
+        display: flex;
+        align-items: center;
+
+        @include responsive-mobile {
+          display: none;
+        }
+
+        img {
+          width: 32px;
+          border-radius: 100%;
+          margin-right: -8px;
+        }
+
+        svg {
+          margin-left: -8px;
+        }
+
+        @include responsive-tablet {
+          width: 100%;
+        }
+
+        p {
+          font-size: 1.8rem;
+          font-weight: 400;
+          margin-left: $gap-16;
+          font-family: $font-title;
+        }
+      }
+    }
+
+    article {
+      background-color: $color-white;
+      color: $color-dark;
+      width: 40%;
+      height: auto;
+      padding: $gap-40;
+
+      @include responsive-desktop {
+        width: 100%;
+        padding: $gap-24;
+      }
+
+      div:nth-child(1) {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: $gap-24;
+
+        h6 {
+          background-color: $color-dark;
+          color: $color-white;
+          font-size: 1.8rem;
+          font-weight: 500;
+          padding: $gap-8 $gap-24;
+          text-transform: uppercase;
+        }
+
+        p {
+          font-size: 1.8rem;
+          color: $color-dark-200;
+          font-weight: 500;
+        }
+      }
+
+      div:nth-child(2) {
+        margin: $gap-56 0px;
+
+        h4 {
+          font-size: 6.4rem;
+
+          @include responsive-tablet {
+            font-size: 5.6rem;
+          }
+        }
+
+        h3 {
+          font-size: 2.4rem;
+          color: $color-dark-200;
+          font-weight: 500;
+          margin-bottom: $gap-8;
+
+          span {
+            text-decoration: line-through;
+          }
         }
       }
 
       a {
+        background: $color-primary;
+        padding: $gap-16;
+        display: flex;
+        justify-content: center;
+
+        &:hover {
+          background: $color-primary-hover;
+        }
+
         button {
-          margin: $gap-32 0;
           text-transform: uppercase;
-          background: $color-primary;
-          padding: $gap-16 $gap-48;
-          border-radius: 4px;
-          font-weight: 500;
+          font-weight: 600;
           font-size: 1.8rem;
-          color: $color-white;
+          color: $color-dark;
+          background-color: transparent;
           cursor: pointer;
-
-          &:hover {
-            background: $color-primary-hover;
-          }
-        }
-      }
-    }
-
-    div {
-      h2 {
-        font-size: 4rem;
-        font-weight: 500;
-        width: 500px;
-        margin-bottom: $gap-32;
-
-        @include responsive-desktop {
-          width: 100%;
-          font-size: 2.4rem;
-        }
-
-        b {
-          color: $color-primary;
-          font-weight: 500;
         }
       }
 
-      p {
+      #info-pay {
+        text-align: center;
         font-size: 1.8rem;
-        color: $color-gray;
-      }
-
-      h3 {
-        font-size: 4.8rem;
+        color: $color-dark-200;
+        margin-top: $gap-24;
         font-weight: 500;
-        @include responsive-desktop {
-          font-size: 4rem;
-        }
-      }
-
-      h4 {
-        font-size: 3.2rem;
-        font-weight: 500;
-        width: 350px;
-        @include responsive-desktop {
-          width: 100%;
-          text-align: center;
-        }
-      }
-
-      ul {
-        margin-top: $gap-48;
-
-        li {
-          display: flex;
-          align-items: center;
-          gap: $gap-16;
-          margin: $gap-8 0px;
-        }
       }
     }
   }

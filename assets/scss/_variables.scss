@@ -1,22 +1,22 @@
-$font-title: "Roboto";
-$font-descripiton: "Roboto";
+$font-title: "Space Grotesk";
+$font-description: "DM Sans";
 
-$color-primary: #986dff;
-$color-primary-hover: #8155ea;
-$color-eplus: #74AA9C;
+$color-primary: #899bff;
+$color-primary-hover: #7489ff;
+$color-eplus: #affe93;
 
 $color-white: #ffffff;
-$color-gray: #e1e1e6;
+$color-gray: #cccccc;
 
-$color-dark: #111111;
-$color-dark-200: #151515;
-$color-dark-400: #1f1f1f;
+$color-dark: #0b0c14;
+$color-dark-200: #171a2b;
+$color-dark-400: #333b61;
 
 $gap-8: 8px;
 $gap-16: 16px;
 $gap-24: 24px;
 $gap-32: 32px;
-$gap-40: 32px;
+$gap-40: 40px;
 $gap-48: 48px;
 $gap-56: 56px;
 $gap-64: 64px;
@@ -65,5 +65,5 @@ $gap-96: 96px;
 @mixin grid-layout() {
   max-width: 1216px;
   margin: 0 auto;
-  padding: 0px 24px;
+  padding: 0px $gap-24;
 }

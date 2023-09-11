@@ -10,8 +10,7 @@
     width: 20%;
     min-height: 290px;
     background-color: $color-dark-200;
-    border: 2px solid $color-dark-400;
-    border-radius: 4px;
+    border: 1px solid $color-dark-400;
     padding: $gap-24;
     flex-grow: 1;
 
@@ -40,7 +39,7 @@
     p {
       font-size: 1.6rem;
       line-height: 160%;
-      color: $color-gray;
+      color: $color-white;
     }
   }
 }
