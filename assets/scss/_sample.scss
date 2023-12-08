@@ -12,8 +12,7 @@
       }
 
       div {
-        margin-top: $gap-72;
-
+        margin-top: $gap-48;
         display: flex;
         flex-wrap: wrap;
         gap: $gap-32;
@@ -22,7 +21,6 @@
       a,
       button {
         font-size: 1.8rem;
-        font-weight: 500;
         color: $color-white;
         cursor: pointer;
 
@@ -33,11 +31,12 @@
       }
 
       a {
-        padding: $gap-16 $gap-32;
+        padding: 20px $gap-48;
+        border-radius: 6px;
       }
 
       a:nth-child(1) {
-        background: $color-primary;
+        background: #6477e7;
 
         &:hover {
           background-color: $color-primary-hover;
@@ -45,22 +44,9 @@
 
         button {
           background-color: transparent;
-          color: $color-dark;
+          color: #fff;
           text-transform: uppercase;
           font-weight: 600;
-        }
-      }
-
-      a:nth-child(2) {
-        color: $color-primary;
-        border: 1px solid $color-primary;
-        background-color: rgba(142, 84, 233, 0.1);
-        text-transform: uppercase;
-        font-weight: 600;
-
-        &:hover {
-          background-color: $color-primary;
-          color: $color-dark;
         }
       }
     }

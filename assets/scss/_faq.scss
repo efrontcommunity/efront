@@ -40,8 +40,10 @@
         border: 1px solid $color-dark-400;
         margin: $gap-40 0;
         padding: $gap-24;
-        line-height: 150%;
+        line-height: 160%;
         font-weight: 400;
+        border-radius: 6px;
+        font-size: 1.6rem;
       }
     }
   }

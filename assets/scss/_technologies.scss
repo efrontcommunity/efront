@@ -1,42 +1,117 @@
 #s-technologies {
   padding: $gap-96 0px;
 
-  .technologies-disable {
-    opacity: 0.5;
-    cursor: no-drop;
-  }
-
   @include responsive-desktop {
     padding: $gap-40 0px;
   }
 
-  #next-icon {
-    width: $gap-56;
-  }
-
-  h4 {
-    color: $color-eplus;
-    text-transform: uppercase;
-    font-size: 1.8rem;
-    margin-bottom: $gap-16;
-    text-align: center;
-  }
-
-  h2 {
-    text-align: center;
-    font-size: 4rem;
-    max-width: 55%;
-    font-weight: 400;
-    margin: 0 auto $gap-56 auto;
-
-    @include responsive-desktop {
-      max-width: 100%;
-      font-size: 3.2rem;
+  .grid-layout {
+    > h4 {
+      color: $color-eplus;
+      text-transform: uppercase;
+      font-size: 1.8rem;
+      margin-bottom: $gap-16;
+      text-align: center;
     }
 
-    b {
-      color: $color-primary;
+    > h2 {
+      text-align: center;
+      font-size: 4rem;
+      max-width: 55%;
       font-weight: 400;
+      margin: 0 auto $gap-56 auto;
+
+      @include responsive-desktop {
+        max-width: 100%;
+        font-size: 3.2rem;
+      }
+
+      b {
+        color: $color-primary;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .container-cards-accordion {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    gap: 16px 32px;
+  }
+
+  .cards-accordion {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 16px 32px;
+    width: 47%;
+    flex-grow: 1;
+
+    @include responsive-tablet {
+      width: 100%;
+    }
+
+    article {
+      width: 100%;
+      flex-grow: 1;
+      background-color: $color-dark-200;
+      border-radius: 6px;
+      border: 1px solid $color-dark-400;
+
+      span {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        img {
+          width: 32px;
+        }
+      }
+    }
+  }
+
+  .accordion-technologies {
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: $color-primary;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+
+    h4 {
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: $color-primary;
+      background-color: $color-dark;
+      padding: 8px 16px;
+      border-radius: 40px;
+    }
+  }
+
+  .panel {
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 1s ease;
+    padding: 0 24px;
+
+    p {
+      padding: $gap-16 0;
+      font-size: 1.8rem;
+      color: $color-gray;
+      line-height: 160%;
     }
   }
 }

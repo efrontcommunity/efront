@@ -10,13 +10,8 @@
     align-items: center;
     justify-content: space-between;
     gap: $gap-32;
-
-    border-bottom: 4px solid #899bff;
-    background: linear-gradient(
-      180deg,
-      rgba(11, 12, 20, 0) 0%,
-      rgba(137, 155, 255, 0.15) 100%
-    );
+    border-radius: 6px;
+    background: linear-gradient(90deg, #6928aa 0.02%, #f89267 99.97%);
     padding: $gap-56;
 
     @include responsive-desktop {
@@ -53,45 +48,27 @@
         @include responsive-tablet {
           max-width: 100%;
         }
-
-        b {
-          font-weight: 400;
-          color: $color-eplus;
-        }
       }
     }
 
     a {
       button {
-        padding: $gap-16 $gap-40;
+        padding: 20px $gap-48;
         text-transform: uppercase;
-        font-weight: 500;
+        font-weight: 700;
         font-size: 1.8rem;
+        border-radius: 6px;
         color: $color-dark;
-        background-color: transparent;
         cursor: pointer;
-        background: $color-primary;
+        background: #fff;
 
         &:hover {
-          background: $color-primary-hover;
+          background: #f9f9f9;
         }
 
         @include responsive-tablet {
           width: 100%;
         }
-      }
-    }
-
-    p {
-      color: $color-eplus;
-      text-transform: uppercase;
-      font-size: 1.8rem;
-      font-weight: 600;
-      margin-top: $gap-16;
-      text-align: center;
-
-      @include responsive-desktop {
-        font-size: 1.4rem;
       }
     }
   }

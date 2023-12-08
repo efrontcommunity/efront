@@ -52,6 +52,7 @@
       border: 1px solid $color-dark-400;
       padding: $gap-24;
       flex-grow: 1;
+      border-radius: 6px;
 
       @include responsive-desktop {
         width: 48%;

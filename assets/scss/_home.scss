@@ -55,8 +55,8 @@
 
         h1 {
           font-size: 5.6rem;
-          font-weight: 400;
-          width: 600px;
+          font-weight: 500;
+          width: 650px;
 
           @include responsive-desktop {
             width: 100%;
@@ -65,13 +65,12 @@
 
           b {
             color: $color-primary;
-            font-weight: 400;
-            letter-spacing: 3px;
+            font-weight: 500;
           }
         }
 
         > p {
-          max-width: 600px;
+          max-width: 650px;
           margin-top: $gap-32;
           font-size: 3rem;
           line-height: 160%;
@@ -90,6 +89,7 @@
         width: 50%;
         height: auto;
         padding: $gap-40;
+        border-radius: 6px;
 
         @include responsive-desktop {
           width: 100%;
@@ -109,6 +109,7 @@
             font-weight: 500;
             padding: $gap-8 $gap-24;
             text-transform: uppercase;
+            border-radius: 4px;
           }
 
           p {
@@ -123,6 +124,7 @@
 
           h4 {
             font-size: 6.4rem;
+            font-weight: 600;
 
             @include responsive-tablet {
               font-size: 5.6rem;
@@ -132,7 +134,7 @@
           h3 {
             font-size: 2.4rem;
             color: $color-dark-200;
-            font-weight: 500;
+            font-weight: 600;
             margin-bottom: $gap-8;
 
             span {
@@ -142,10 +144,11 @@
         }
 
         a {
-          background: $color-primary;
-          padding: $gap-16;
+          background: #6477e7;
+          padding: 20px;
           display: flex;
           justify-content: center;
+          border-radius: 6px;
 
           &:hover {
             background: $color-primary-hover;
@@ -153,9 +156,9 @@
 
           button {
             text-transform: uppercase;
-            font-weight: 600;
+            font-weight: 700;
             font-size: 1.8rem;
-            color: $color-dark;
+            color: #fff;
             background-color: transparent;
             cursor: pointer;
           }
