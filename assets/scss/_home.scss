@@ -1,5 +1,9 @@
 #s-home {
-  padding: $gap-96 0px;
+  height: 100vh;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding-bottom: 4%;
 
   @include responsive-desktop {
     padding: $gap-40 0px;
@@ -19,157 +23,76 @@
       }
 
       #info-main {
-        width: 50%;
+        width: 100%;
+        text-align: center;
 
-        @include responsive-desktop {
-          width: 100%;
-        }
-
-        span {
-          display: flex;
-          align-items: center;
-          margin-bottom: $gap-40;
-
-          img {
-            width: 32px;
-            border-radius: 100%;
-            margin-right: -8px;
-          }
-
-          svg {
-            width: 40px;
-            margin-left: -8px;
-          }
-
-          @include responsive-tablet {
-            width: 100%;
-          }
-
-          p {
-            font-size: 1.8rem;
-            font-weight: 400;
-            margin-left: $gap-24;
-            font-family: $font-title;
-          }
+        img {
+          z-index: -1;
+          position: absolute;
+          top: 35%;
+          left: 50%;
+          transform: translate(-50%, -50%);
         }
 
         h1 {
           font-size: 5.6rem;
           font-weight: 500;
-          width: 650px;
+          margin-top: 16px;
 
           @include responsive-desktop {
             width: 100%;
-            font-size: 4rem;
+            font-size: 3rem;
           }
 
           b {
-            color: $color-primary;
+            color: $color-eplus;
             font-weight: 500;
           }
+        }
+
+        .title-thanks {
+          width: 90%;
+          margin: 0 auto;
         }
 
         > p {
-          max-width: 650px;
           margin-top: $gap-32;
-          font-size: 3rem;
+          font-size: 2.4rem;
           line-height: 160%;
-          color: $color-gray;
+          color: $color-white;
+
+          b {
+            color: $color-eplus;
+            font-weight: 400;
+          }
 
           @include responsive-desktop {
             width: 100%;
-            font-size: 2rem;
-          }
-        }
-      }
-
-      article {
-        background-color: $color-white;
-        color: $color-dark;
-        width: 50%;
-        height: auto;
-        padding: $gap-40;
-        border-radius: 6px;
-
-        @include responsive-desktop {
-          width: 100%;
-          padding: $gap-24;
-        }
-
-        div:nth-child(1) {
-          display: flex;
-          align-items: center;
-          flex-wrap: wrap;
-          gap: $gap-24;
-
-          h2 {
-            background-color: $color-dark;
-            color: $color-white;
             font-size: 1.8rem;
-            font-weight: 500;
-            padding: $gap-8 $gap-24;
-            text-transform: uppercase;
-            border-radius: 4px;
-          }
-
-          p {
-            font-size: 1.8rem;
-            color: $color-dark-200;
-            font-weight: 500;
-          }
-        }
-
-        div:nth-child(2) {
-          margin: $gap-56 0px;
-
-          h4 {
-            font-size: 6.4rem;
-            font-weight: 600;
-
-            @include responsive-tablet {
-              font-size: 5.6rem;
-            }
-          }
-
-          h3 {
-            font-size: 2.4rem;
-            color: $color-dark-200;
-            font-weight: 600;
-            margin-bottom: $gap-8;
-
-            span {
-              text-decoration: line-through;
-            }
           }
         }
 
         a {
-          background: #6477e7;
-          padding: 20px;
-          display: flex;
-          justify-content: center;
-          border-radius: 6px;
-
-          &:hover {
-            background: $color-primary-hover;
-          }
-
           button {
+            margin-top: 48px;
+            border-radius: 6px;
+            padding: 20px 40px;
+            background: $color-primary;
             text-transform: uppercase;
-            font-weight: 700;
+            font-weight: 600;
             font-size: 1.8rem;
             color: #fff;
-            background-color: transparent;
-            cursor: pointer;
-          }
-        }
 
-        #info-pay {
-          text-align: center;
-          font-size: 1.8rem;
-          color: $color-dark-200;
-          margin-top: $gap-24;
-          font-weight: 500;
+            cursor: pointer;
+
+            @include responsive-desktop {
+              font-size: 1.6rem;
+            }
+
+            &:hover {
+              background: $color-primary-hover;
+            }
+          }
         }
       }
     }

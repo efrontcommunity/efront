@@ -30,10 +30,15 @@
       }
 
       h3 {
-        font-size: 1.8rem;
-        color: $color-eplus;
+        color: $color-white;
+        background-color: $color-primary;
         text-transform: uppercase;
-        margin-bottom: $gap-8;
+        font-size: 1.8rem;
+        font-weight: 500;
+        padding: 6px 12px;
+        border-radius: 4px;
+        display: table;
+        margin-bottom: 16px;
       }
 
       h4 {
@@ -98,7 +103,6 @@
         p {
           font-size: 2rem;
           line-height: 160%;
-       
 
           @include responsive-desktop {
             font-size: 1.8rem;
@@ -141,7 +145,7 @@
     }
 
     b {
-      color: $color-primary;
+      color: $color-eplus;
       font-weight: 400;
     }
   }

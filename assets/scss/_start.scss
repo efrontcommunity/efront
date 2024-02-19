@@ -1,175 +1,150 @@
 #s-start {
   padding: $gap-96 0px;
+  text-align: center;
 
   @include responsive-desktop {
     padding: $gap-40 0px;
   }
 
-  .container-start {
-    display: flex;
-    align-items: stretch;
+  .grid-layout {
+    h2 {
+      font-size: 4rem;
+      font-weight: 400;
+      text-align: center;
+      margin: 0 auto $gap-24 auto;
 
-    @include responsive-desktop {
-      flex-wrap: wrap;
+      @include responsive-desktop {
+        font-size: 3.2rem;
+      }
+
+      b {
+        color: $color-eplus;
+        font-weight: 400;
+      }
     }
 
-    > div:nth-child(1) {
-      width: 60%;
-      height: auto;
-      border-radius: 6px 0 0 6px;
-      padding: $gap-80;
-      background-color: $color-dark-200;
-      border: 1px solid $color-dark-400;
+    .sub-title {
+      font-size: 2.2rem;
+      line-height: 160%;
+      width: 70%;
+      margin: 0 auto;
+
+      @include responsive-desktop {
+        width: 100%;
+        font-size: 2rem;
+      }
+
+      b {
+        color: $color-white;
+        background-color: $color-primary;
+        font-size: 1.8rem;
+        font-weight: 500;
+        padding: 5px 8px;
+        border-radius: 2px;
+        text-transform: uppercase;
+        margin-right: 6px;
+      }
+    }
+
+    h3 {
+      margin: $gap-48 0;
+      font-size: 2.4rem;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    ul {
+      background-color: #fff;
+      border-radius: 6px;
+      padding: 24px;
+      max-width: 70%;
 
       display: flex;
-      align-items: center;
+      flex-direction: column;
+      text-align: left;
 
-      @include responsive-desktop {
-        width: 100%;
-        padding: $gap-40 $gap-24;
+      @include responsive-tablet {
+        max-width: 100%;
       }
 
-      h3 {
-        font-size: 1.6rem;
+      margin: 0 auto $gap-48 auto;
+
+      li {
+        font-size: 2rem;
         font-weight: 500;
-        color: $color-eplus;
-        text-transform: uppercase;
-        font-family: $font-description;
-      }
-
-      h2 {
-        font-size: 4.8rem;
-  
-        margin: $gap-16 0 $gap-48 0;
+        color: #000;
+        border-bottom: 3px solid #ccc;
+        padding: 16px 0;
 
         @include responsive-desktop {
-          font-size: 3.2rem;
-          margin: $gap-16 0 $gap-32 0;
-        }
-
-        @include responsive-mobile {
-          margin: $gap-16 0 0 0;
-        }
-      }
-
-      span {
-        display: flex;
-        align-items: center;
-
-        @include responsive-mobile {
-          display: none;
-        }
-
-        img {
-          width: 32px;
-          border-radius: 100%;
-          margin-right: -8px;
-        }
-
-        svg {
-          width: 40px;
-          margin-left: -8px;
-        }
-
-        @include responsive-tablet {
-          width: 100%;
-        }
-
-        p {
           font-size: 1.8rem;
-          font-weight: 400;
-          margin-left: $gap-24;
-          font-family: $font-title;
+        }
+
+        &:nth-child(1) {
+          padding-top: 0;
+        }
+
+        &:nth-last-child(1) {
+          border: none;
+          padding-bottom: 0;
+        }
+
+        b {
+          color: #ff0000;
+          text-decoration: line-through;
+        }
+
+        span {
+          font-weight: 700;
         }
       }
     }
 
-    article {
-      background-color: $color-white;
-      color: $color-dark;
-      width: 40%;
-      height: auto;
-      padding: $gap-40;
-      border-radius: 0 6px 6px 0;
+    h4 {
+      font-size: 3.2rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 24px;
 
       @include responsive-desktop {
-        width: 100%;
-        padding: $gap-24;
+        font-size: 2.4rem;
       }
 
-      div:nth-child(1) {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: $gap-24;
+      b {
+        color: #ff0000;
+        text-decoration: line-through;
+      }
+    }
 
-        h2 {
-          background-color: $color-dark;
-          color: $color-white;
-          font-size: 1.8rem;
-          font-weight: 500;
-          padding: $gap-8 $gap-24;
-          text-transform: uppercase;
-          border-radius: 4px;
-        }
+    .value-card {
+      font-size: 4.8rem;
+      font-weight: 600;
 
-        p {
-          font-size: 1.8rem;
-          color: $color-dark-200;
-          font-weight: 500;
-        }
+      @include responsive-desktop {
+        font-size: 3.2rem;
       }
 
-      div:nth-child(2) {
-        margin: $gap-56 0px;
-
-        h4 {
-          font-size: 6.4rem;
-
-          @include responsive-tablet {
-            font-size: 5.6rem;
-          }
-        }
-
-        h3 {
-          font-size: 2.4rem;
-          color: $color-dark-200;
-          font-weight: 500;
-          margin-bottom: $gap-8;
-
-          span {
-            text-decoration: line-through;
-          }
-        }
+      b {
+        color: $color-eplus;
+        font-weight: 600;
       }
+    }
 
-      a {
-        background: #6477e7;
-        padding: 20px;
-        display: flex;
-        justify-content: center;
+    a {
+      button {
+        background: $color-primary;
+        padding: 20px 48px;
         border-radius: 6px;
+        margin-top: 48px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.8rem;
+        color: #fff;
+        cursor: pointer;
 
         &:hover {
           background: $color-primary-hover;
         }
-
-        button {
-          text-transform: uppercase;
-          font-weight: 600;
-          font-size: 1.8rem;
-          color: #fff;
-          background-color: transparent;
-          cursor: pointer;
-        }
-      }
-
-      #info-pay {
-        text-align: center;
-        font-size: 1.8rem;
-        color: $color-dark-200;
-        margin-top: $gap-24;
-        font-weight: 500;
       }
     }
   }

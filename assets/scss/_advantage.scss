@@ -26,20 +26,12 @@
         min-height: auto;
       }
 
-      > div {
-        background: linear-gradient(158deg, #313137 0%, #09090a 100%);
+      div {
+        background: $color-dark-200;
         display: inline-block;
         border-radius: 4px;
-        padding: 1px;
-
-        > div {
-          background: $color-dark-200;
-          color: white;
-          padding: 8px;
-          width: 100%;
-          height: 100%;
-          border-radius: 4px;
-        }
+        padding: 8px;
+        border: 1px solid $color-dark-400;
 
         img {
           width: 32px;
@@ -50,7 +42,7 @@
         }
       }
 
-      h3 {
+      h2 {
         font-size: 2.4rem;
         font-weight: 500;
         margin: $gap-32 0px;
