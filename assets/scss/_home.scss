@@ -32,6 +32,10 @@
           top: 35%;
           left: 50%;
           transform: translate(-50%, -50%);
+
+          @include responsive-mobile {
+            top: 45%;
+          }
         }
 
         h1 {
@@ -62,8 +66,11 @@
           color: $color-white;
 
           b {
-            color: $color-eplus;
-            font-weight: 400;
+            background-color: #fac833;
+            color: #000;
+            font-weight: 600;
+            padding: 2px 6px;
+            border-radius: 4px;
           }
 
           @include responsive-desktop {
