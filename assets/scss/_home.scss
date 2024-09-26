@@ -1,9 +1,14 @@
 #s-home {
   height: 100vh;
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: center;
-  padding-bottom: 4%;
+  position: relative;
+  background: radial-gradient(
+    ellipse at bottom,
+    rgba(122, 92, 255, 0.3) 0%,
+    #000 70%
+  );
 
   @include responsive-desktop {
     padding: $gap-40 0px;
@@ -25,32 +30,60 @@
       #info-main {
         width: 100%;
         text-align: center;
+        z-index: 5;
 
-        img {
-          z-index: -1;
-          position: absolute;
-          top: 35%;
-          left: 50%;
-          transform: translate(-50%, -50%);
+        #note-hotmart {
+          border-radius: 50px;
+          padding: 6px 24px;
+          border: 1px solid #1e1e1e;
+          display: inline-block;
+          background-color: $color-dark;
 
-          @include responsive-mobile {
-            top: 45%;
+          div {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+          }
+
+          p {
+            font-size: 1.6rem;
+            color: $color-white;
+            font-weight: 300;
+
+            b {
+              color: $color-secondary;
+              font-weight: 500;
+            }
+          }
+
+          span {
+            display: flex;
+            align-items: center;
+
+            img {
+              margin-left: -8px;
+              width: 32px;
+              border-radius: 100%;
+              border: 3px solid $color-dark;
+            }
           }
         }
 
         h1 {
-          font-size: 5.6rem;
-          font-weight: 500;
+          font-size: 7.2rem;
+          font-weight: 600;
           margin-top: 16px;
+          line-height: 110%;
+          margin-bottom: $gap-32;
 
           @include responsive-desktop {
             width: 100%;
-            font-size: 3rem;
+            font-size: 4.8rem;
           }
 
           b {
-            color: $color-eplus;
-            font-weight: 500;
+            color: $color-secondary;
+            font-weight: 600;
           }
         }
 
@@ -60,46 +93,47 @@
         }
 
         > p {
-          margin-top: $gap-32;
           font-size: 2.4rem;
           line-height: 160%;
-          color: $color-white;
-
-          b {
-            background-color: #fac833;
-            color: #000;
-            font-weight: 600;
-            padding: 2px 6px;
-            border-radius: 4px;
-          }
+          color: #d9d9d9;
+          font-weight: 300;
+          width: 80%;
+          margin: 0 auto;
 
           @include responsive-desktop {
             width: 100%;
-            font-size: 1.8rem;
+            font-size: 2rem;
+          }
+
+          b {
+            color: $color-white;
+            font-weight: 500;
           }
         }
 
         a {
           button {
             margin-top: 48px;
-            border-radius: 6px;
-            padding: 20px 40px;
+            border-radius: 50px;
+            padding: 16px 56px;
             background: $color-primary;
-            text-transform: uppercase;
-            font-weight: 600;
-            font-size: 1.8rem;
+            font-weight: 500;
+            font-size: 2rem;
             color: #fff;
-
             cursor: pointer;
 
-            @include responsive-desktop {
-              font-size: 1.6rem;
-            }
-
             &:hover {
-              background: $color-primary-hover;
+              background: $color-white;
+              color: $color-primary;
             }
           }
+        }
+
+        #timer {
+          font-size: 2.4rem;
+          color: $color-white;
+          font-weight: 500;
+          margin-top: 40px;
         }
       }
     }

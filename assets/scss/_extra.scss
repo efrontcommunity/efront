@@ -1,0 +1,106 @@
+#s-extra {
+  padding: $gap-96 0px;
+
+  @include responsive-desktop {
+    padding: $gap-40 0px;
+  }
+
+  .grid-layout {
+    > h4 {
+      color: $color-white;
+      font-size: 2.4rem;
+      font-weight: 400;
+      margin-bottom: 16px;
+      display: inline-block;
+
+      @include responsive-desktop {
+        font-size: 2rem;
+      }
+    }
+
+    > h2 {
+      font-size: 4.8rem;
+      font-weight: 600;
+      margin-bottom: $gap-56;
+
+      @include responsive-desktop {
+        max-width: 100%;
+        font-size: 4rem;
+      }
+
+      b {
+        color: $color-secondary;
+        font-weight: 600;
+      }
+    }
+
+    #container-extra {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+
+      article {
+        flex-grow: 1;
+        width: 30%;
+        height: auto;
+        border-radius: 8px;
+        height: auto;
+        padding: $gap-32;
+        background: rgb(76, 56, 138);
+        background: linear-gradient(
+          217deg,
+          rgba(76, 56, 138, 1) 0%,
+          rgba(26, 19, 46, 1) 100%
+        );
+
+        @include responsive-desktop {
+          width: 43%;
+        }
+
+        @include responsive-tablet {
+          width: 100%;
+        }
+
+        img {
+          width: 100%;
+          height: 300px;
+          margin-top: 32px;
+        }
+
+        h4 {
+          font-size: 1.4rem;
+          font-weight: 600;
+          background-color: $color-white;
+          border-radius: 24px;
+          text-transform: uppercase;
+          display: inline-block;
+          color: $color-primary;
+          padding: 6px 20px;
+
+          @include responsive-desktop {
+            font-size: 1.6rem;
+          }
+        }
+
+        h3 {
+          font-size: 2rem;
+          margin: 12px 0;
+
+          @include responsive-desktop {
+            font-size: 2.4rem;
+          }
+        }
+
+        p {
+          font-size: 1.6rem;
+
+          @include responsive-desktop {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+}

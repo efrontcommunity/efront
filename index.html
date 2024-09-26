@@ -2,72 +2,100 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="keywords"
-      content="efront, ebook, frontend, hotmart, iuricode, programação, material"
-    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#3866fb" />
-    <meta name="author" content="Iuri Silva" />
-    <meta name="copyright" content="Iuri Silva" />
-    <meta http-equiv="content-language" content="pt-br" />
-    <title>Guia para aprender frontend</title>
-    <meta name="title" content="Guia para aprender frontend" />
+    <title>eFront - Um guia para aprender frontend do zero</title>
+    <meta
+      name="title"
+      content="eFront - Um guia para aprender frontend do zero"
+    />
     <meta
       name="description"
       content="Tudo que você precisa pra evoluir na programação em um só material."
     />
-    <meta property="og:title" content="Guia para aprender frontend" />
-    <meta
-      property="og:description"
-      content="Tudo que você precisa pra evoluir na programação em um só material."
-    />
-    <meta property="og:image" content="assets/image/capa-page.png" />
     <link
       rel="shortcut icon"
-      href="assets/image/logo-page.png"
+      href="assets/image/icon.png"
       type="image/x-icon"
     />
-    <link rel="icon" href="assets/image/logo-page.png" />
-    <link rel="apple-touch-icon" href="assets/image/logo-page.png" />
-    <link rel="canonical" href="https://iuricode.com/efront" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <script src="assets/js/svg-inject.min.js"></script>
   </head>
   <body>
-    <header id="info-promotion">
+    <header id="s-menu">
       <div class="grid-layout">
-        <p>
-          Invista na sua carreira e descubra como ser um programador de sucesso
-        </p>
+        <img src="./assets/image/logo.svg" alt="Logo" />
 
-        <a href="#s-start" rel="noopener">
-          <button>Quero aprender agora</button>
-        </a>
+        <div>
+          <a
+            href="https://hotmart.com/pt-br/club/iuricode/products"
+            rel="noopener"
+            >Área do aluno</a
+          >
+
+          <a
+            href="https://pay.hotmart.com/L66686646K?checkoutMode=10"
+            rel="noopener"
+          >
+            <button>Quero minha vaga</button>
+          </a>
+        </div>
       </div>
     </header>
 
     <main>
       <section id="s-home">
+        <div id="particle"></div>
+
         <div class="grid-layout">
           <div id="container-home">
             <div id="info-main">
-              <img
-                src="assets/image/mago.svg"
-                alt="Mago usando computador"
-                width="666"
-                height="631"
-              />
+              <div id="note-hotmart" class="delay200">
+                <div>
+                  <p><b>Nota 4.9 Hotmart</b> e + de 14.000 alunos</p>
+
+                  <span>
+                    <img
+                      src="./assets/image/rosana.png"
+                      alt="Rosana"
+                      width="48"
+                      height="48"
+                    />
+                    <img
+                      src="./assets/image/marcos.png"
+                      alt="Marcos"
+                      width="48"
+                      height="48"
+                    />
+                    <img
+                      src="./assets/image/fernanda.png"
+                      alt="Fernanda"
+                      width="48"
+                      height="48"
+                    />
+                    <img
+                      src="./assets/image/amanda.png"
+                      alt="Amanda"
+                      width="48"
+                      height="48"
+                    />
+                    <img
+                      src="./assets/image/vitoria.png"
+                      alt="Amanda"
+                      width="48"
+                      height="48"
+                    />
+                  </span>
+                </div>
+              </div>
 
               <h1>
-                Aprenda programação do zero e ganhe uma
-                <b>remuneração acima da média</b>
+                Aprenda frontend do zero e ganhe uma
+                <b id="element"></b>
               </h1>
               <p>
                 Com as habilidades que você irá ganhar, é possível
@@ -75,9 +103,16 @@
                 tecnologias, materiais e projetos práticos que você receberá!
               </p>
 
-              <a href="#s-start" rel="noopener">
+              <a
+                href="https://pay.hotmart.com/L66686646K?checkoutMode=10"
+                rel="noopener"
+              >
                 <button>Quero aprender agora</button>
               </a>
+
+              <p id="timer" class="delay500">
+                90% OFF até <span class="timer" id="countdown"></span>
+              </p>
             </div>
           </div>
         </div>
@@ -86,197 +121,74 @@
       <section id="s-about">
         <div class="grid-layout">
           <div>
-            <div class="container-heading-title">
-              <span>
-                <img
-                  src="./assets/image/rosana.png"
-                  alt="Foto da Rosana"
-                  width="48"
-                  height="48"
-                />
-                <img
-                  src="./assets/image/marcos.png"
-                  alt="Foto do Marcos"
-                  width="48"
-                  height="48"
-                />
-                <img
-                  src="./assets/image/fernanda.png"
-                  alt="Foto da Fernanda"
-                  width="48"
-                  height="48"
-                />
-                <img
-                  src="./assets/image/amanda.png"
-                  alt="Foto da Amanda"
-                  width="48"
-                  height="48"
-                />
-                <img
-                  src="./assets/icons/seal-check.svg"
-                  alt="Ícone"
-                  onload="SVGInject(this)"
-                />
-              </span>
-
-              <h2>Com você, serão mais de <b>13 mil alunos</b>.</h2>
+            <div class="container-heading-title delay200">
+              <h2>Com você, serão mais de <b>14 mil alunos</b>.</h2>
             </div>
             <div>
               <p>
-                Nosso material foi construído com um único objetivo: Ajudar as
-                pessoas a entrarem no mundo da programação sem precisar fazer um
-                grande investimento.
+                Você também quer entrar no mundo da programação, mas não sabe
+                por onde começar? O material foi feito especialmente para você!
+                Nosso material foi desenvolvido com um único objetivo: ajudar
+                pessoas como você a se tornarem programadores, sem precisar
+                fazer um grande investimento.
               </p>
 
               <p>
-                Pois passei por toda a dificuldade de encontrar materiais
-                adaptados (e de forma acessível) para entrar no mercado, e hoje,
-                me dedico a ajudar o maior número de pessoas possível a aprender
-                programação.
+                Faça parte da nossa comunidade de desenvolvedores em crescimento
+                e dê o primeiro passo na sua jornada!
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="s-sample">
-        <div class="grid-layout">
-          <div>
-            <p class="sub-title">Tudo em um só material</p>
-            <h2>
-              Coloquei neste material, o que <b>queria aprender</b> desde o
-              início
-            </h2>
-
-            <ul>
-              <li>
-                <img
-                  src="./assets/icons/check.svg"
-                  alt="Ícone de confirmação"
-                  onload="SVGInject(this)"
-                />
-                <p>20 módulos sobre desenvolvimento frontend.</p>
-              </li>
-              <li>
-                <img
-                  src="./assets/icons/check.svg"
-                  alt="Ícone de confirmação"
-                  onload="SVGInject(this)"
-                />
-                <p>Conceitos do básico ao avançado.</p>
-              </li>
-              <li>
-                <img
-                  src="./assets/icons/check.svg"
-                  alt="Ícone de confirmação"
-                  onload="SVGInject(this)"
-                />
-                <p>
-                  Explicações de fácil entendimento e repleto de ilustrações.
-                </p>
-              </li>
-              <li>
-                <img
-                  src="./assets/icons/check.svg"
-                  alt="Ícone de confirmação"
-                  onload="SVGInject(this)"
-                />
-                <p>Questionários e exercícios práticos para cada módulo.</p>
-              </li>
-              <li>
-                <img
-                  src="./assets/icons/check.svg"
-                  alt="Ícone de confirmação"
-                  onload="SVGInject(this)"
-                />
-                <p>Módulos sempre atualizado e sem custo.</p>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <img
-              src="./assets/image/ebook-amostra.png"
-              alt="Amostra do ebook"
-              width="849"
-              height="810"
-              loading="lazy"
-            />
           </div>
         </div>
       </section>
 
       <section id="s-salary">
         <div class="grid-layout">
-          <h3>Fonte: GlassDoor e linkedin</h3>
-          <h2>Quanto <b>ganha</b> um programador no Brasil</h2>
-          <div class="cards-salary">
-            <article>
-              <img
-                src="./assets/icons/asterisk.svg"
-                alt="ícone de estrela"
-                onload="SVGInject(this)"
-              />
-              <h3>Salário Júnior</h3>
-              <h4>3-5K</h4>
-            </article>
+          <h4>Excelentes oportunidades salários altos</h4>
+          <h2>Os melhores <b>salários</b></h2>
 
-            <article>
-              <img
-                src="./assets/icons/asterisk.svg"
-                alt="ícone de estrela"
-                onload="SVGInject(this)"
-              />
-              <img
-                src="./assets/icons/asterisk.svg"
-                alt="ícone de estrela"
-                onload="SVGInject(this)"
-              />
-              <h3>Salário Pleno</h3>
-              <h4>5-8K</h4>
-            </article>
-
-            <article>
-              <img
-                src="./assets/icons/asterisk.svg"
-                alt="ícone de estrela"
-                onload="SVGInject(this)"
-              />
-              <img
-                src="./assets/icons/asterisk.svg"
-                alt="ícone de estrela"
-                onload="SVGInject(this)"
-              />
-              <img
-                src="./assets/icons/asterisk.svg"
-                alt="ícone de estrela"
-                onload="SVGInject(this)"
-              />
-              <h3>Salário Sênior</h3>
-              <h4>8-20K</h4>
-            </article>
+          <div class="salary-stack">
+            <h3>Júnior</h3>
+            <div class="value-bar jr">
+              <p>R$ 3000 - R$ 5000</p>
+            </div>
           </div>
+
+          <div class="salary-stack">
+            <h3>Pleno</h3>
+            <div class="value-bar pl">
+              <p>R$ 5000 - R$ 8000</p>
+            </div>
+          </div>
+
+          <div class="salary-stack">
+            <h3>Sênior</h3>
+            <div class="value-bar sr">
+              <p>+ R$ 8000</p>
+            </div>
+          </div>
+
+          <span>
+            <h5>Fonte: GlassDoor e LinkedIn</h5>
+            <p>
+              * Estes são valores aproximados que pode variar de empresa para
+              empresa e também de acordo com o estado.
+            </p>
+          </span>
         </div>
       </section>
 
       <section id="s-technologies">
         <div class="grid-layout">
-          <h4>As melhores tecnologias</h4>
-          <h2>
-            As tecnologias para você iniciar e
-            <b>entrar no mercado</b>
-          </h2>
+          <h4>Mais de 140 capítulos com muito aprendizado</h4>
+          <h2>Sobre a estrutura do <b>material</b></h2>
 
           <div class="container-cards-accordion">
             <div class="cards-accordion">
               <article>
                 <div class="accordion-technologies">
                   <span>
-                    <img
-                      src="assets/icons/html.svg"
-                      alt="Ícone HTML"
-                      onload="SVGInject(this)"
-                    />
+                    <img src="assets/icons/html.svg" alt="Ícone HTML" />
                     <h3>HTML</h3>
                   </span>
                   <h4>15 tópicos</h4>
@@ -292,11 +204,7 @@
               <article>
                 <div class="accordion-technologies">
                   <span>
-                    <img
-                      src="assets/icons/css.svg"
-                      alt="Ícone CSS"
-                      onload="SVGInject(this)"
-                    />
+                    <img src="assets/icons/css.svg" alt="Ícone CSS" />
                     <h3>CSS</h3>
                   </span>
                   <h4>16 tópicos</h4>
@@ -315,7 +223,6 @@
                     <img
                       src="assets/icons/javascript.svg"
                       alt="Ícone JavaScript"
-                      onload="SVGInject(this)"
                     />
                     <h3>JavaScript</h3>
                   </span>
@@ -332,11 +239,7 @@
               <article>
                 <div class="accordion-technologies">
                   <span>
-                    <img
-                      src="assets/icons/sass.svg"
-                      alt="Ícone Sass"
-                      onload="SVGInject(this)"
-                    />
+                    <img src="assets/icons/sass.svg" alt="Ícone Sass" />
                     <h3>Sass</h3>
                   </span>
                   <h4>9 tópicos</h4>
@@ -355,7 +258,6 @@
                     <img
                       src="assets/icons/bootstrap.svg"
                       alt="Ícone Bootstrap"
-                      onload="SVGInject(this)"
                     />
                     <h3>Bootstrap</h3>
                   </span>
@@ -372,11 +274,7 @@
               <article>
                 <div class="accordion-technologies">
                   <span>
-                    <img
-                      src="assets/icons/react.svg"
-                      alt="Ícone React"
-                      onload="SVGInject(this)"
-                    />
+                    <img src="assets/icons/react.svg" alt="Ícone React" />
                     <h3>React</h3>
                   </span>
                   <h4>10 tópicos</h4>
@@ -395,7 +293,6 @@
                     <img
                       src="assets/icons/reactrouter.svg"
                       alt="Ícone React Router"
-                      onload="SVGInject(this)"
                     />
                     <h3>React Router</h3>
                   </span>
@@ -416,7 +313,6 @@
                     <img
                       src="assets/icons/typescript.svg"
                       alt="Ícone TypeScript"
-                      onload="SVGInject(this)"
                     />
                     <h3>TypeScript</h3>
                   </span>
@@ -439,7 +335,6 @@
                     <img
                       src="assets/icons/styled-components.svg"
                       alt="Ícone styled-components"
-                      onload="SVGInject(this)"
                     />
                     <h3>styled-components</h3>
                   </span>
@@ -459,7 +354,6 @@
                     <img
                       src="assets/icons/tailwindcss.svg"
                       alt="Ícone Tailwind CSS"
-                      onload="SVGInject(this)"
                     />
                     <h3>Tailwind CSS</h3>
                   </span>
@@ -479,7 +373,6 @@
                     <img
                       src="assets/icons/form.svg"
                       alt="Ícone React Hook Form"
-                      onload="SVGInject(this)"
                     />
                     <h3>React Hook Form</h3>
                   </span>
@@ -496,11 +389,7 @@
               <article>
                 <div class="accordion-technologies">
                   <span>
-                    <img
-                      src="assets/icons/radix.svg"
-                      alt="Ícone Radix UI"
-                      onload="SVGInject(this)"
-                    />
+                    <img src="assets/icons/radix.svg" alt="Ícone Radix UI" />
                     <h3>Radix UI</h3>
                   </span>
                   <h4>6 tópicos</h4>
@@ -519,7 +408,6 @@
                     <img
                       src="assets/icons/storybook.svg"
                       alt="Ícone Storybook"
-                      onload="SVGInject(this)"
                     />
                     <h3>Storybook</h3>
                   </span>
@@ -537,11 +425,7 @@
               <article>
                 <div class="accordion-technologies">
                   <span>
-                    <img
-                      src="assets/icons/cypress.svg"
-                      alt="Ícone Cypress"
-                      onload="SVGInject(this)"
-                    />
+                    <img src="assets/icons/cypress.svg" alt="Ícone Cypress" />
                     <h3>Cypress</h3>
                   </span>
                   <h4>3 tópicos</h4>
@@ -558,11 +442,7 @@
               <article>
                 <div class="accordion-technologies">
                   <span>
-                    <img
-                      src="assets/icons/next.svg"
-                      alt="Ícone Next.js"
-                      onload="SVGInject(this)"
-                    />
+                    <img src="assets/icons/next.svg" alt="Ícone Next.js" />
                     <h3>Next.js</h3>
                   </span>
                   <h4>7 tópicos</h4>
@@ -579,11 +459,7 @@
               <article>
                 <div class="accordion-technologies">
                   <span>
-                    <img
-                      src="assets/icons/bonus.svg"
-                      alt="Ícone Medalha"
-                      onload="SVGInject(this)"
-                    />
+                    <img src="assets/icons/bonus.svg" alt="Ícone Medalha" />
                     <h3>Bônus</h3>
                   </span>
                   <h4>5 tópicos</h4>
@@ -600,163 +476,18 @@
         </div>
       </section>
 
-      <section id="s-courses">
+      <section id="s-depoiments">
         <div class="grid-layout">
-          <h4>Outros materiais disponíveis</h4>
-          <h2>Escolha seu material ou carreira</h2>
+          <h4>Depoimentos dos alunos</h4>
+          <h2>O que <b>os alunos</b> estão falando</h2>
 
-          <div class="cards-courses">
-            <article>
-              <div class="card-header">
-                <p>Desconto de 90%</p>
-              </div>
-
-              <div class="card-content">
-                <h3>
-                  Carreira de <br />
-                  Freelancer
-                </h3>
-
-                <ul>
-                  <li>ChatGPT</li>
-                  <li>Freela</li>
-                  <li>Acessibilidade</li>
-                  <li>Hospedagem</li>
-                  <li>Git e GitHub</li>
-                  <li>Figma</li>
-                  <li>Clean Code</li>
-                </ul>
-
-                <p>De <span>R$ 97</span> por</p>
-                <h4>R$ 10,00</h4>
-
-                <a
-                  href="https://pay.hotmart.com/X83677661Q?checkoutMode=10"
-                  rel="noopener"
-                >
-                  <button>Comprar material</button>
-                </a>
-              </div>
-            </article>
-
-            <article>
-              <div class="card-header">
-                <p>Desconto de 90%</p>
-              </div>
-
-              <div class="card-content">
-                <h3>
-                  Carreira de <br />
-                  UI/UX Design
-                </h3>
-
-                <ul>
-                  <li>Os princípios do design</li>
-                  <li>Heurísticas de Nielsen</li>
-                  <li>Psicologia das cores</li>
-                  <li>Design System</li>
-                  <li>Usabilidade</li>
-                  <li>Wireframe</li>
-                  <li>Padrões</li>
-                </ul>
-
-                <p>De <span>R$ 97</span> por</p>
-                <h4>R$ 10,00</h4>
-
-                <a
-                  href="https://pay.hotmart.com/K90648777J?checkoutMode=10"
-                  rel="noopener"
-                >
-                  <button>Comprar material</button>
-                </a>
-              </div>
-            </article>
-
-            <article>
-              <div class="card-header">
-                <p>Desconto de 90%</p>
-              </div>
-
-              <div class="card-content">
-                <h3>
-                  Ingressar no <br />
-                  Mercado
-                </h3>
-
-                <ul>
-                  <li>LinkedIn</li>
-                  <li>Entrevistas</li>
-                  <li>Currículo</li>
-                  <li>Portfólio</li>
-                  <li>GitHub</li>
-                  <li>Mentorias</li>
-                  <li>Vagas</li>
-                </ul>
-
-                <p>De <span>R$ 97</span> por</p>
-                <h4>R$ 10,00</h4>
-
-                <a
-                  href="https://pay.hotmart.com/D92601037C?checkoutMode=10"
-                  rel="noopener"
-                >
-                  <button>Comprar material</button>
-                </a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="s-depositions">
-        <div class="grid-layout">
-          <div class="container-depositions">
-            <div class="text-depositions">
-              <h2>O que alguns dos nossos <b>alunos</b> estão falando</h2>
-
-              <span>
-                <img
-                  src="./assets/image/rosana.png"
-                  alt="Foto da Rosana"
-                  width="48"
-                  height="48"
-                />
-                <img
-                  src="./assets/image/marcos.png"
-                  alt="Foto do Marcos"
-                  width="48"
-                  height="48"
-                />
-                <img
-                  src="./assets/image/fernanda.png"
-                  alt="Foto da Fernanda"
-                  width="48"
-                  height="48"
-                />
-                <img
-                  src="./assets/image/amanda.png"
-                  alt="Foto da Amanda"
-                  width="48"
-                  height="48"
-                />
-                <img
-                  src="./assets/icons/seal-check.svg"
-                  alt="Ícone"
-                  onload="SVGInject(this)"
-                />
-                <p>Junta-se a 13.000 alunos</p>
-              </span>
-
-              <h3>Nota hotmart</h3>
-              <h4>4,9 / 5.0</h4>
-            </div>
-
-            <div class="depositions">
-              <article>
+          <div class="testimonial-slider">
+            <div class="testimonial-track">
+              <div class="testimonial-card">
                 <p>
-                  “Ebook incrível, para quem está iniciando ou quer relembrar
+                  Ebook incrível, para quem está iniciando ou quer relembrar
                   conceitos, super didático e atual às necessidades do mercado.
-                  Simplesmente sensacional, parabéns Iuri, você arrasa demais.”
+                  Simplesmente sensacional, parabéns Iuri, você arrasa demais.
                 </p>
 
                 <div>
@@ -777,14 +508,39 @@
                     >
                   </span>
                 </div>
-              </article>
-
-              <article>
+              </div>
+              <div class="testimonial-card">
                 <p>
-                  “Este conteúdo é muito bem estruturado e oferece muito mais do
+                  O e-book está incrível! Muito claro e perfeito para iniciantes
+                  que querem evoluir até o avançado. Com certeza vai ajudar
+                  muita gente a começar no Frontend e no mercado de trabalho.
+                </p>
+
+                <div>
+                  <img
+                    src="assets/image/vitoria.png"
+                    alt="Foto da Vitoria"
+                    width="48"
+                    height="48"
+                  />
+
+                  <span>
+                    <h3>Vitória Luz</h3>
+                    <a
+                      href="https://www.instagram.com/vitoriacode"
+                      rel="noopener"
+                      target="_blank"
+                      >@vitoriacode</a
+                    >
+                  </span>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <p>
+                  Este conteúdo é muito bem estruturado e oferece muito mais do
                   que simples apostilas ou orientações. Ele oferece a
                   experiência de um desenvolvedor e sua capacidade de
-                  compartilhar sua experiência.”
+                  compartilhar sua experiência.
                 </p>
 
                 <div>
@@ -805,14 +561,13 @@
                     >
                   </span>
                 </div>
-              </article>
-
-              <article>
+              </div>
+              <div class="testimonial-card">
                 <p>
-                  “De longe um dos melhores materiais que pude encontrar e
+                  De longe um dos melhores materiais que pude encontrar e
                   usufruir de tecnologia para web! Foi o dinheiro mais bem gasto
                   da minha vida, super agradeço o Iuri por nos proporcionar esse
-                  conhecimento!”
+                  conhecimento!
                 </p>
 
                 <div>
@@ -833,14 +588,13 @@
                     >
                   </span>
                 </div>
-              </article>
-
-              <article>
+              </div>
+              <div class="testimonial-card">
                 <p>
-                  “Gostei muito do conteúdo e da didática! Obrigada por
-                  partilhar o conhecimento e parabéns pelo trabalho! É de grande
-                  ajuda não só para aqueles que estão iniciando mas também para
-                  aqueles que querem se aprofundar nesses assuntos!”
+                  Gostei muito do conteúdo e da didática! Obrigada por partilhar
+                  o conhecimento e parabéns pelo trabalho! É de grande ajuda não
+                  só para aqueles que estão iniciando mas também para aqueles
+                  que querem se aprofundar nesses assuntos!
                 </p>
 
                 <div>
@@ -861,79 +615,151 @@
                     >
                   </span>
                 </div>
-              </article>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="s-start">
+      <section id="s-projects">
         <div class="grid-layout">
-          <h3>Escolha a melhor oferta 👇</h3>
+          <h4>Cases para o seu portfolio</h4>
+          <h2>Projetos <b>disponíveis</b> no material</h2>
 
-          <div class="two-oferta">
+          <div>
             <article>
-              <header class="basic">
-                <h3>BÁSICO</h3>
-                <p>⭐⭐⭐⭐</p>
-                <p>4.8 (148 Avaliações)</p>
-              </header>
+              <img src="./assets/image/teslabank.png" alt="" />
 
               <div>
-                <p class="value-card">R$ 15,00</p>
+                <h2>TeslaBank</h2>
 
-                <ul>
-                  <li>✅ eBook com 20 módulos</li>
-                  <li>✅ Roadmap Frontend 2024</li>
-                  <li>✅ Acesso vitalício</li>
-                </ul>
+                <p>
+                  Projeto de banco TestaBank, tem o objetivo de projetar a
+                  interface desde o zero, pagemaps, referências visuais, criação
+                  de wireframes e ilustrações.
+                </p>
 
                 <a
-                  href="https://pay.hotmart.com/Y92742612S?checkoutMode=10"
+                  href="https://iuricode.com/teslabank/"
                   rel="noopener"
+                  target="_blank"
+                  >Visualizar projeto</a
                 >
-                  <button>Quero o básico</button>
-                </a>
+              </div>
+            </article>
 
-                <p class="pagamento">Não acha a versão Pro melhor? 🫤</p>
+            <article class="project-inverse">
+              <div>
+                <h2>Naped</h2>
+
+                <p>
+                  Projeto de notícias nerds, incluindo páginas de login,
+                  pesquisa e de erro. Ótimo projeto para criar portfólio para
+                  desenvolvedores no GitHub.
+                </p>
+
+                <a
+                  href="https://efront-naped.vercel.app/"
+                  rel="noopener"
+                  target="_blank"
+                  >Visualizar projeto</a
+                >
+              </div>
+
+              <img src="./assets/image/naped.png" alt="" />
+            </article>
+
+            <article>
+              <img src="./assets/image/steam.png" alt="" />
+
+              <div>
+                <h2>Steam</h2>
+
+                <p>
+                  Trata-se de um projeto para entusiastas, que querem sair um
+                  pouco do padrão dos projetos e construir algo mais diferente,
+                  como a plataforma de jogos Steam.
+                </p>
+
+                <a
+                  href="https://efront-steam.vercel.app/"
+                  rel="noopener"
+                  target="_blank"
+                  >Visualizar projeto</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="s-extra">
+        <div class="grid-layout">
+          <h4>Bônus que valem muito</h4>
+          <h2>Materiais <b>bônus</b> para você</h2>
+
+          <div id="container-extra">
+            <article>
+              <div>
+                <h4>Bônus extra</h4>
+                <h3>Comunidade no Discord</h3>
+                <p>
+                  Para aprender, interagir e solicitar feedbacks com os alunos
+                  do material.
+                </p>
               </div>
             </article>
 
             <article>
-              <header class="pro">
-                <h3>PRO</h3>
-                <p>⭐⭐⭐⭐⭐</p>
-                <p>5.0 (314 Avaliações)</p>
-              </header>
-
               <div>
-                <p class="antes">de <span>R$ 147,00</span> por</p>
+                <h4>Bônus extra</h4>
+                <h3>Biblioteca de links</h3>
+                <p>
+                  Uma lista extensa de links e recursos para a área de
+                  desenvolvimento.
+                </p>
+              </div>
+            </article>
 
-                <p class="value-card">R$ 20,00</p>
+            <article>
+              <div>
+                <h4>Bônus extra</h4>
+                <h3>Roadmap de estudos</h3>
+                <p>
+                  Um guia completo de tópicos que todo dev precisa aprender em
+                  2024.
+                </p>
+              </div>
+            </article>
 
-                <img src="assets/image/ebook.png" alt="" />
+            <article>
+              <div>
+                <h4>Bônus extra</h4>
+                <h3>Vagas da semana</h3>
+                <p>
+                  Confira as melhores oportunidades de emprego na área de
+                  tecnologia.
+                </p>
+              </div>
+            </article>
 
-                <ul>
-                  <li>✅ eBook com 20 módulos</li>
-                  <li>✅ Roadmap Frontend 2024</li>
-                  <li>✅ Acesso vitalício</li>
-                  <li>✅ <b>Bônus 01:</b> Comunidade no Discord</li>
-                  <li>✅ <b>Bônus 02:</b> Notion com 500 links úteis</li>
-                  <li>✅ <b>Bônus 03:</b> Grupo privado no WhatsApp</li>
-                  <li>✅ <b>Bônus 04:</b> Melhores vagas da semana</li>
-                  <li>✅ <b>Bônus 05:</b> Material prático por módulo</li>
-                  <li>✅ <b>Bônus 06:</b> Projetos para portfólio</li>
-                  <li>✅ <b>Bônus 07:</b> Cronograma de estudos</li>
-                </ul>
+            <article>
+              <div>
+                <h4>Bônus extra</h4>
+                <h3>Questionário de teste</h3>
+                <p>
+                  Avalie seus conhecimentos com perguntas frontend desafiadoras.
+                </p>
+              </div>
+            </article>
 
-                <a
-                  href="https://pay.hotmart.com/L66686646K?checkoutMode=10"
-                  rel="noopener"
-                >
-                  <button>Quero o pro</button>
-                </a>
-
-                <p class="pagamento">🔥 Aproveite, o preço vai subir! 🔥</p>
+            <article>
+              <div>
+                <h4>Bônus extra</h4>
+                <h3>Desafiando conhecimento</h3>
+                <p>
+                  Teste suas habilidades no frontend com questões avançadas.
+                </p>
               </div>
             </article>
           </div>
@@ -944,7 +770,7 @@
         <div class="grid-layout">
           <div class="container-faq">
             <div>
-              <h2>Perguntas frequentes</h2>
+              <h2>Perguntas <b>frequentes</b></h2>
 
               <p>
                 Essas são algumas perguntas frequentes que recebo em meu
@@ -968,10 +794,10 @@
                 </div>
                 <div class="panel">
                   <p>
-                    Não! O eFront é um <b>ebook</b> criado por mim onde eu
-                    ensino a como utilizar tecnologias frontend. Tudo isso é
-                    ensinado com didática simples de entender, até quem está
-                    iniciando consegue entender o que cada linguagem faz.
+                    Não! O eFront é um ebook criado por mim onde eu ensino a
+                    como utilizar tecnologias frontend. Tudo isso é ensinado com
+                    didática simples de entender, até quem está iniciando
+                    consegue entender o que cada linguagem faz.
                   </p>
                 </div>
               </article>
@@ -1009,6 +835,275 @@
       </section>
     </main>
 
-    <script type="module" src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.js"></script>
+    <script>
+      const sr = ScrollReveal({
+        origin: "top",
+        distance: "50px",
+        duration: 2000,
+      });
+
+      sr.reveal(".delay100", { delay: 100 });
+      sr.reveal(".delay200", { delay: 200 });
+      sr.reveal(".delay300", { delay: 300 });
+      sr.reveal(".delay400", { delay: 400 });
+      sr.reveal(".delay500", { delay: 500 });
+
+      var typed = new Typed("#element", {
+        strings: ["remuneração acima da média"],
+        typeSpeed: 80,
+      });
+
+      var config = {
+        particles: {
+          number: {
+            value: 150,
+            density: {
+              enable: true,
+              value_area: 786,
+            },
+          },
+          color: {
+            value: ["#ffffff", "#fff", "#fff", "#fff"],
+          },
+          shape: {
+            type: "circle",
+            stroke: {
+              width: 0,
+              color: "#000000",
+            },
+            polygon: {
+              nb_sides: 12,
+            },
+            image: {
+              src: "",
+              width: 100,
+              height: 100,
+            },
+          },
+          opacity: {
+            value: 1,
+            random: true,
+            anim: {
+              enable: true,
+              speed: 1,
+              opacity_min: 0,
+              sync: false,
+            },
+          },
+          size: {
+            value: 2.5,
+            random: true,
+            anim: {
+              enable: true,
+              speed: 3,
+              size_min: 0.3,
+              sync: false,
+            },
+          },
+          line_linked: {
+            enable: false,
+            distance: 100,
+            color: "#fff",
+            opacity: 0.023674428,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 1.3,
+            direction: "top",
+            random: true,
+            straight: true,
+            out_mode: "out",
+            bounce: false,
+            attract: {
+              enable: true,
+              rotateX: 2082.2488,
+              rotateY: 3363.6328,
+            },
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: true,
+              mode: "grab",
+            },
+            onclick: {
+              enable: true,
+              mode: "repulse",
+            },
+            resize: true,
+          },
+          modes: {
+            grab: {
+              distance: 70,
+              line_linked: {
+                opacity: 0.25,
+              },
+            },
+            bubble: {
+              distance: 100,
+              size: 5,
+              duration: 8.598243,
+              opacity: 0,
+              speed: 3,
+            },
+            repulse: {
+              distance: 150,
+              duration: 0.8,
+            },
+            push: {
+              particles_nb: 4,
+            },
+            remove: {
+              particles_nb: 2,
+            },
+          },
+        },
+        retina_detect: true,
+      };
+
+      window.onload = function () {
+        let clause = window.innerWidth < 768;
+        config.particles.number.value = clause ? 20 : 25;
+        particlesJS("particle", config);
+      };
+
+      function getBrasiliaTime() {
+        const options = { timeZone: "America/Sao_Paulo", hour12: false };
+        const now = new Date().toLocaleString("en-US", options);
+        return new Date(now);
+      }
+
+      function calculateTimeRemaining(targetTime) {
+        const now = getBrasiliaTime();
+        const timeDifference = targetTime - now;
+        const totalSeconds = Math.floor(timeDifference / 1000);
+        const hours = Math.floor(totalSeconds / 3600);
+        const minutes = Math.floor((totalSeconds % 3600) / 60);
+        const seconds = totalSeconds % 60;
+
+        return {
+          total: totalSeconds,
+          hours,
+          minutes,
+          seconds,
+        };
+      }
+
+      function updateCountdown() {
+        const targetHour = 20;
+        const now = getBrasiliaTime();
+        let targetTime;
+
+        if (now.getHours() >= targetHour) {
+          targetTime = getBrasiliaTime();
+          targetTime.setDate(now.getDate() + 1);
+          targetTime.setHours(targetHour, 0, 0, 0);
+        } else {
+          targetTime = getBrasiliaTime();
+          targetTime.setHours(targetHour, 0, 0, 0);
+        }
+
+        const remainingTime = calculateTimeRemaining(targetTime);
+
+        if (remainingTime.total <= 0) {
+          startTenMinuteCountdown();
+        } else {
+          document.getElementById(
+            "countdown"
+          ).innerHTML = `${remainingTime.hours
+            .toString()
+            .padStart(2, "0")}:${remainingTime.minutes
+            .toString()
+            .padStart(2, "0")}:${remainingTime.seconds
+            .toString()
+            .padStart(2, "0")}`;
+          setTimeout(updateCountdown, 1000);
+        }
+      }
+
+      function startTenMinuteCountdown() {
+        const tenMinutes = 5 * 60; // 10 minutes in seconds
+        let timeLeft = tenMinutes;
+
+        const interval = setInterval(() => {
+          const minutes = Math.floor(timeLeft / 60);
+          const seconds = timeLeft % 60;
+
+          document.getElementById("countdown").innerHTML = `${minutes
+            .toString()
+            .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+
+          timeLeft--;
+
+          if (timeLeft < 0) {
+            clearInterval(interval);
+            updateCountdown(); // Reinicia a contagem para as 20h do próximo dia
+          }
+        }, 1000);
+      }
+
+      updateCountdown(); // Inicializa a contagem regressiva
+
+      let acc = document.getElementsByClassName("accordion");
+
+      for (let i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          let panel = this.nextElementSibling;
+
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+            this.classList.remove("open");
+            this.getElementsByClassName("icon")[0].innerHTML = "+";
+          } else {
+            for (let x = 0; x < acc.length; x++) {
+              acc[x].classList.remove("open");
+              acc[x].nextElementSibling.style.maxHeight = null;
+              acc[x].getElementsByClassName("icon")[0].innerHTML = "+";
+            }
+
+            panel.style.maxHeight = panel.scrollHeight + "px";
+            this.classList.toggle("open");
+            this.getElementsByClassName("icon")[0].innerHTML = "-";
+          }
+        });
+      }
+
+      let accc = document.getElementsByClassName("accordion-technologies");
+
+      for (let i = 0; i < accc.length; i++) {
+        accc[i].addEventListener("click", function () {
+          let panel = this.nextElementSibling;
+
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+            this.classList.remove("open");
+          } else {
+            for (let x = 0; x < accc.length; x++) {
+              accc[x].classList.remove("open");
+              accc[x].nextElementSibling.style.maxHeight = null;
+            }
+
+            panel.style.maxHeight = panel.scrollHeight + "px";
+            this.classList.toggle("open");
+          }
+        });
+      }
+
+      const slider = document.querySelector(".testimonial-track");
+
+      slider.addEventListener("mouseenter", () => {
+        slider.style.animationPlayState = "paused";
+      });
+
+      slider.addEventListener("mouseleave", () => {
+        slider.style.animationPlayState = "running";
+      });
+    </script>
   </body>
 </html>

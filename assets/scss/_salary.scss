@@ -5,82 +5,96 @@
     padding: $gap-40 0px;
   }
 
-  img {
-    width: 40px;
-    display: inline;
-  }
-
   .grid-layout {
-    > h3 {
+    > h4 {
       color: $color-white;
-      background-color: $color-primary;
-      text-transform: uppercase;
-      font-size: 1.8rem;
-      font-weight: 500;
-      padding: 6px 12px;
-      border-radius: 4px;
-      margin: 0 auto 16px auto;
-      display: table;
-    }
-  }
-
-  h2 {
-    font-size: 4rem;
-    max-width: 45%;
-    font-weight: 400;
-    text-align: center;
-    margin: 0 auto $gap-56 auto;
-
-    @include responsive-desktop {
-      max-width: 100%;
-      font-size: 3.2rem;
-    }
-
-    b {
-      color: $color-eplus;
+      font-size: 2.4rem;
       font-weight: 400;
-    }
-  }
-
-  .cards-salary {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: $gap-32;
-
-    article {
-      width: 30%;
-      height: auto;
-      background-color: $color-dark-200;
-      border: 1px solid $color-dark-400;
-      padding: $gap-24;
-      flex-grow: 1;
-      border-radius: 6px;
+      margin-bottom: 16px;
+      display: inline-block;
 
       @include responsive-desktop {
-        width: 48%;
+        font-size: 2rem;
+      }
+    }
+
+    > h2 {
+      font-size: 4.8rem;
+      font-weight: 600;
+      margin-bottom: $gap-56;
+
+      @include responsive-desktop {
+        max-width: 100%;
+        font-size: 4rem;
       }
 
-      @include responsive-tablet {
-        min-height: auto;
+      b {
+        color: $color-secondary;
+        font-weight: 600;
       }
+    }
 
-      img {
-        width: 40px;
-      }
+    .salary-stack {
+      margin: 48px 0;
 
       h3 {
         font-size: 2rem;
-        margin: $gap-24 0px $gap-16 0px;
-        font-weight: 500;
-        color: $color-white;
-        font-family: $font-title;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+        color: $color-secondary;
       }
 
-      h4 {
-        font-size: 4.8rem;
-        color: $color-eplus;
+      .jr {
+        width: 30%;
+        background-color: #8e7ad0;
+
+        @include responsive-desktop {
+          width: 70%;
+        }
+      }
+
+      .pl {
+        width: 60%;
+        background-color: #7361b0;
+
+        @include responsive-desktop {
+          width: 80%;
+        }
+      }
+
+      .sr {
+        width: 90%;
+        background-color: #4d3b87;
+
+        @include responsive-desktop {
+          width: 100%;
+        }
+      }
+
+      .value-bar {
+        padding: 20px 32px;
+
+        p {
+          font-size: 2rem;
+          font-weight: 600;
+        }
+      }
+    }
+
+    span {
+      h5 {
+        font-size: 2rem;
+      }
+
+      p {
+        margin-top: 16px;
+        font-size: 2rem;
+        width: 50%;
+        font-weight: 300;
+
+        @include responsive-desktop {
+          width: 100%;
+        }
       }
     }
   }
