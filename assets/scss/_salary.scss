@@ -34,6 +34,62 @@
       }
     }
 
+    .meter {
+      height: auto;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .jr {
+      background-color: #8e7ad0;
+    }
+
+    .pl {
+      background-color: #7361b0;
+    }
+
+    .sr {
+      background-color: #4d3b87;
+    }
+
+    #jr {
+      width: 60%;
+    }
+
+    #pl {
+      width: 80%;
+    }
+
+    #sr {
+      width: 100%;
+    }
+
+    .meter span {
+      display: block;
+      height: 100%;
+    }
+
+    .progress {
+      padding: 20px 32px;
+      animation: progressBar 6s ease-in-out;
+      animation-fill-mode: both;
+      width: 100%;
+
+      p {
+        font-size: 2rem;
+        font-weight: 600;
+      }
+    }
+
+    @keyframes progressBar {
+      0% {
+        width: 40%;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+
     .salary-stack {
       margin: 48px 0;
 
@@ -43,45 +99,9 @@
         margin-bottom: 16px;
         color: $color-secondary;
       }
-
-      .jr {
-        width: 30%;
-        background-color: #8e7ad0;
-
-        @include responsive-desktop {
-          width: 70%;
-        }
-      }
-
-      .pl {
-        width: 60%;
-        background-color: #7361b0;
-
-        @include responsive-desktop {
-          width: 80%;
-        }
-      }
-
-      .sr {
-        width: 90%;
-        background-color: #4d3b87;
-
-        @include responsive-desktop {
-          width: 100%;
-        }
-      }
-
-      .value-bar {
-        padding: 20px 32px;
-
-        p {
-          font-size: 2rem;
-          font-weight: 600;
-        }
-      }
     }
 
-    span {
+    > span {
       h5 {
         font-size: 2rem;
       }

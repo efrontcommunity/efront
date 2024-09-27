@@ -1,5 +1,5 @@
 #s-home {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,6 +38,10 @@
           border: 1px solid #1e1e1e;
           display: inline-block;
           background-color: $color-dark;
+
+          @include responsive-tablet {
+            display: none;
+          }
 
           div {
             display: flex;
@@ -78,7 +82,7 @@
 
           @include responsive-desktop {
             width: 100%;
-            font-size: 4.8rem;
+            font-size: 4rem;
           }
 
           b {
@@ -121,6 +125,10 @@
             font-size: 2rem;
             color: #fff;
             cursor: pointer;
+
+            @include responsive-desktop {
+              width: 100%;
+            }
 
             &:hover {
               background: $color-white;
